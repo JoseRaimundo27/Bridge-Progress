@@ -29,7 +29,7 @@ The method is based on:
 ## Requirements
 
 - Linux, Python 3.10 – 3.12
-- `python3-venv` (`sudo apt install python3-venv python3-full`)
+- System packages: `sudo apt install python3-venv python3-full libusb-1.0-0`
 - An NVIDIA GPU with CUDA to train RandLA-Net (the CPU works, but training is very slow)
 
 ## Installation
@@ -38,12 +38,12 @@ The method is based on:
 make install
 ```
 
-This command creates a virtual environment in `.venv/`, installs `requirements.txt`, then installs PyTorch: the CUDA build when an NVIDIA GPU is detected, the CPU build otherwise.
+This command creates a virtual environment in `.venv/`, installs `requirements.txt`, then installs Open3D and PyTorch: the CUDA builds (`open3d`, PyTorch cu126) when an NVIDIA GPU is detected, the CPU builds (`open3d-cpu`, PyTorch cpu) otherwise.
 
 To choose another PyTorch build:
 
 ```bash
-make install TORCH_VERSION=2.2.2 TORCH_INDEX=https://download.pytorch.org/whl/cu118
+make install TORCH_INDEX=https://download.pytorch.org/whl/cu130
 ```
 
 > The PyTorch version must match the version Open3D-ML was built against. If `import open3d.ml.torch` fails, its error message gives the expected version.

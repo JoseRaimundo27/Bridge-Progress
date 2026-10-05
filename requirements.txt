@@ -1,6 +1,6 @@
 # Commun
 numpy>=1.24,<2.0
-open3d>=0.18
+# open3d is installed by `make install` (open3d or open3d-cpu, depending on the GPU)
 
 # Module 1: BIMtoPC
 ifcopenshell>=0.8
@@ -13,3 +13,5 @@ tqdm
 pyyaml
 addict
 scikit-learn
+# Tests
+pytest
