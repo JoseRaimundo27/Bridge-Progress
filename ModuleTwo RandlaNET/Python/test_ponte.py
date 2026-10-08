@@ -1,10 +1,10 @@
 import torch
 import open3d.ml.torch as ml3d
-from dataset_ponte import PonteDataset
+from dataset_ponte import PonteDataset, PASTA_PONTE_CUSTOM3D, CHECKPOINT_FINAL
 
 # 1. Carrega o nosso Dataset
 dataset = PonteDataset(
-    dataset_path="/home/joserasj/RandlaNET/DATASET/Ponte_Custom3D"
+    dataset_path=PASTA_PONTE_CUSTOM3D
 )
 
 # 2. Configura a Rede Neural exatamente como no treino
@@ -23,7 +23,7 @@ pipeline = ml3d.pipelines.SemanticSegmentation(
 )
 
 # 4. CARREGA O CÉREBRO TREINADO (A Época 50)
-caminho_dos_pesos = "./logs_ponte/RandLANet_PonteDataset_torch/checkpoint/ckpt_00050.pth"
+caminho_dos_pesos = str(CHECKPOINT_FINAL)
 print(f"Carregando o modelo treinado em: {caminho_dos_pesos}")
 
 pipeline.load_ckpt(ckpt_path=caminho_dos_pesos)

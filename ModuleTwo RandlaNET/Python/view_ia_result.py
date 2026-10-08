@@ -2,11 +2,10 @@ import torch
 import numpy as np
 import open3d as o3d
 import open3d.ml.torch as ml3d
-from dataset_ponte import PonteDataset
-from plyfile import PlyData
+from dataset_ponte import PonteDataset, PASTA_PONTE_CUSTOM3D, PASTA_DATASET, CHECKPOINT_FINAL, carregar_ply
 
 print("1. Carregando as configurações da IA...")
-dataset = PonteDataset(dataset_path="/home/joserasj/Módulos/ModuleTwo RandlaNET/DATASET/Ponte_Custom3D")
+dataset = PonteDataset(dataset_path=PASTA_PONTE_CUSTOM3D)
 
 model = ml3d.models.RandLANet(
     num_points=40960,  
@@ -22,18 +21,14 @@ pipeline = ml3d.pipelines.SemanticSegmentation(
 )
 
 # Carrega os pesos da Época 50
-pipeline.load_ckpt("./logs_ponte/RandLANet_PonteDataset_torch/checkpoint/ckpt_00050.pth")
+pipeline.load_ckpt(str(CHECKPOINT_FINAL))
 
 print("2. Carregando a nuvem de pontos da ponte...")
-#ply_path = "/home/joserasj/Módulos/ModuleTwo RandlaNET/DATASET/Ponte_Custom3D/test/ponte.ply"
-ply_path = "/home/joserasj/Módulos/ModuleTwo RandlaNET/DATASET/D19/ponte.ply"
+#ply_path = PASTA_PONTE_CUSTOM3D / "test" / "ponte.ply"
+ply_path = PASTA_DATASET / "D19" / "ponte.ply"
 
-ply = PlyData.read(ply_path)
-vertex = ply["vertex"].data
-
-points = np.vstack([vertex["x"], vertex["y"], vertex["z"]]).T.astype(np.float32)
-points = points - np.min(points, axis=0)
-feat = np.vstack([vertex["red"], vertex["green"], vertex["blue"]]).T.astype(np.float32) / 255.0
+# Mesma leitura que no treino (centralização em float64 antes do float32)
+points, feat, _ = carregar_ply(ply_path)
 
 # : Criamos um array de zeros do mesmo tamanho da nuvem
 dummy_labels = np.zeros(points.shape[0], dtype=np.int32)
