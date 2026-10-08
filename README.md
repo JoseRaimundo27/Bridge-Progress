@@ -29,7 +29,7 @@ The method is based on:
 ## Requirements
 
 - Linux, Python 3.10 – 3.12
-- System packages: `sudo apt install python3-venv python3-full libusb-1.0-0`
+- System packages: `sudo apt install make python3-venv python3-full libusb-1.0-0`
 - An NVIDIA GPU with CUDA to train RandLA-Net (the CPU works, but training is very slow)
 
 ## Installation
@@ -54,13 +54,15 @@ Data files are not versioned. Put them in these locations:
 
 | Used by | Expected path |
 |---|---|
-| BIM parsing | `ModuleOne BIMtoPC/Modelos/*.ifc` (IFC2x3) |
-| Segmentation | `ModuleTwo RandlaNET/DATASET/Ponte_Custom3D/{train,val}/*.ply` (fields `x y z red green blue label`) |
+| BIM parsing | `ModuleOne BIMtoPC/Modelos/*.ifc` (IFC2x3, IFC4 or IFC4X3) |
+| Segmentation | `ModuleTwo RandlaNET/DATASET/Ponte_Custom3D/{train,val,test}/*.ply` (fields `x y z red green blue label`) |
 | Registration | `ModuleTwo Registration/AsBuilt/*.ply` and `ModuleTwo Registration/AsPlanned/*.ply` |
 
 `ModuleTwo RandlaNET/Python/txt_ply.py` converts a `x y z r g b label` text file (for example a CloudCompare export) to this PLY format.
 
-The input file names and paths are set at the top of each script.
+The input file names are set at the top of each script. Paths are relative to the script's module folder, so the scripts work from any directory and on any machine.
+
+`test/` is optional but recommended: without it, the test runs on the validation files, which were already used during training, and the scores are optimistic (a warning is printed).
 
 ## Usage
 
@@ -72,6 +74,8 @@ make m2-2    # Registration: OBBP-ICP
 ```
 
 The Makefile uses `.venv/bin/python` by default. To use another interpreter: `make m1 PYTHON=python3`.
+
+On WSL, the Makefile sets the display variables Open3D needs (software OpenGL through X11). WSL is detected automatically; to force it, add `WSL=1` or `WSL=0` (e.g. `make m2-2 WSL=0`). Other WSL tips: `ModuleTwo RandlaNET/comandos.txt`.
 
 ### Outputs
 

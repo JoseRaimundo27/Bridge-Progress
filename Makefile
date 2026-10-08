@@ -13,9 +13,13 @@ OPEN3D_PKG ?= open3d-cpu
 TORCH_INDEX ?= https://download.pytorch.org/whl/cpu
 endif
 
+# Open3D display settings for WSL (auto-detected, force with WSL=1 or WSL=0)
+WSL ?= $(if $(shell grep -qi microsoft /proc/version 2>/dev/null && echo yes),1,0)
+ifeq ($(WSL),1)
 export XDG_SESSION_TYPE := x11
 export GDK_BACKEND := x11
 export LIBGL_ALWAYS_SOFTWARE := 1
+endif
 
 .PHONY: help install m1 m2-1 m2-2
 
@@ -23,7 +27,7 @@ help:
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## ' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-8s\033[0m %s\n", $$1, $$2}'
 
-install:
+install: ## Create .venv and install the dependencies
 	@ldconfig -p | grep -q libusb-1.0 || { echo "Missing system library: run 'sudo apt install libusb-1.0-0'"; exit 1; }
 	python3 -m venv "$(VENV)"
 	"$(VENV)/bin/pip" install --upgrade pip
@@ -33,7 +37,7 @@ install:
 	"$(VENV)/bin/python" -c "import open3d.ml.torch" && echo "Installation OK"
 
 m1: ## Module 1 BIMtoPC
-	cd "ModuleOne BIMtoPC/Python" && mkdir -p resultados_dados_semanticos resultado_nuvem_global && \
+	cd "ModuleOne BIMtoPC/Python" && \
 		"$(PYTHON)" dados_semanticos.py && "$(PYTHON)" geometriaEnuvem.py
 
 m2-1: ## Module 2 RandLA-Net
