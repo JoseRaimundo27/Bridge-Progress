@@ -1,0 +1,18 @@
+[
+ {
+  "bridge": "asymmetric",
+  "success": "8/8",
+  "failed_angles": "-",
+  "max_rot_err_ok_deg": 0.009535134293598794,
+  "mean_err_ok_m": 0.0007336433589706205,
+  "mean_time_s": 1.8095256847500423
+ },
+ {
+  "bridge": "symmetric",
+  "success": "8/8",
+  "failed_angles": "-",
+  "max_rot_err_ok_deg": 0.008617526316575964,
+  "mean_err_ok_m": 0.0018015326157244992,
+  "mean_time_s": 1.3361931687500146
+ }
+]

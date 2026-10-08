@@ -1,0 +1,56 @@
+[
+ {
+  "scan": "RandLA-Net",
+  "points": 76965,
+  "clutter_left": 16965,
+  "method": "prototype v1",
+  "success": "0/4",
+  "d_avg": 3.2231031314507823,
+  "median": 1.5002610540457437
+ },
+ {
+  "scan": "RandLA-Net",
+  "points": 76965,
+  "clutter_left": 16965,
+  "method": "FPFH+RANSAC+ICP",
+  "success": "3/4",
+  "d_avg": 3.4566456239330905,
+  "median": 0.7151118667905496
+ },
+ {
+  "scan": "RandLA-Net + statistical outlier removal",
+  "points": 70792,
+  "clutter_left": 10792,
+  "method": "prototype v1",
+  "success": "0/4",
+  "d_avg": 2.624167865966455,
+  "median": 1.4955127142961175
+ },
+ {
+  "scan": "RandLA-Net + statistical outlier removal",
+  "points": 70792,
+  "clutter_left": 10792,
+  "method": "FPFH+RANSAC+ICP",
+  "success": "4/4",
+  "d_avg": 1.8278380540354957,
+  "median": 0.09082993336954628
+ },
+ {
+  "scan": "RandLA-Net + largest DBSCAN cluster",
+  "points": 76635,
+  "clutter_left": 16635,
+  "method": "prototype v1",
+  "success": "0/4",
+  "d_avg": 3.1832551824605777,
+  "median": 1.499936996192004
+ },
+ {
+  "scan": "RandLA-Net + largest DBSCAN cluster",
+  "points": 76635,
+  "clutter_left": 16635,
+  "method": "FPFH+RANSAC+ICP",
+  "success": "3/4",
+  "d_avg": 2.703723369469758,
+  "median": 0.10970890717440514
+ }
+]

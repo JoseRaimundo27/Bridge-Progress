@@ -1,0 +1,37 @@
+[
+ {
+  "method": "legacy (thr 20 m)",
+  "success": "3/8",
+  "failed_angles": "90,135,180,225,270",
+  "mean_err_ok_m": 0.006535976644142206,
+  "mean_time_s": 0.5521755336253591
+ },
+ {
+  "method": "ICP only (centroids + multi-scale)",
+  "success": "5/8",
+  "failed_angles": "135,180,225",
+  "mean_err_ok_m": 0.0007428174290989905,
+  "mean_time_s": 1.317364635499871
+ },
+ {
+  "method": "FPFH+RANSAC+ICP",
+  "success": "8/8",
+  "failed_angles": "-",
+  "mean_err_ok_m": 0.0007715506821641784,
+  "mean_time_s": 1.0638020601254539
+ },
+ {
+  "method": "prototype v1 (point-to-point)",
+  "success": "8/8",
+  "failed_angles": "-",
+  "mean_err_ok_m": 0.0007336433589706205,
+  "mean_time_s": 1.6848979218734712
+ },
+ {
+  "method": "prototype v1 (point-to-plane)",
+  "success": "8/8",
+  "failed_angles": "-",
+  "mean_err_ok_m": 0.00028019492257071654,
+  "mean_time_s": 0.78901901800009
+ }
+]

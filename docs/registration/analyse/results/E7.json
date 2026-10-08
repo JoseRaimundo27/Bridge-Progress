@@ -1,0 +1,44 @@
+[
+ {
+  "scan": "segmented (bridge only)",
+  "method": "legacy thr 20 m",
+  "success": "1/4",
+  "d_avg": 0.9043504142276617,
+  "time_s": 0.5548400847492303
+ },
+ {
+  "scan": "segmented (bridge only)",
+  "method": "legacy thr 1 m",
+  "success": "4/4",
+  "d_avg": 0.08568916410235329,
+  "time_s": 0.49104365700077324
+ },
+ {
+  "scan": "segmented (bridge only)",
+  "method": "prototype v1",
+  "success": "4/4",
+  "d_avg": 0.08544032455537179,
+  "time_s": 1.7728334450002876
+ },
+ {
+  "scan": "raw (terrain + crane + trees)",
+  "method": "legacy thr 20 m",
+  "success": "0/4",
+  "d_avg": 12.31568512543127,
+  "time_s": 2.2479396729986547
+ },
+ {
+  "scan": "raw (terrain + crane + trees)",
+  "method": "legacy thr 1 m",
+  "success": "0/4",
+  "d_avg": 12.143349521939104,
+  "time_s": 2.9428036169992993
+ },
+ {
+  "scan": "raw (terrain + crane + trees)",
+  "method": "prototype v1",
+  "success": "4/4",
+  "d_avg": 11.97975748961564,
+  "time_s": 8.855790954748954
+ }
+]
