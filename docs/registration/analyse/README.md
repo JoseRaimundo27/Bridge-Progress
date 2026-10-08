@@ -1,8 +1,6 @@
-# Banc d'essai de l'analyse initiale / Initial analysis test bench
+# Initial analysis test bench
 
-**FR.** Scripts utilisés pour l'[analyse initiale](../analyse-initiale.fr.md) du 8 octobre 2026. Ils testent l'ancien code (`legacy/obbp_icp_v0.py`) et un prototype des corrections prévues, sur les ponts synthétiques de `tests/conftest.py`. Ils ne modifient pas le dépôt et ne font pas partie du paquet `registration/`.
-
-**EN.** Scripts used for the [initial analysis](../initial-analysis.en.md) of October 8, 2026. They test the old code (`legacy/obbp_icp_v0.py`) and a prototype of the planned fixes on the synthetic bridges of `tests/conftest.py`. They do not change the repository and are not part of the `registration/` package.
+Scripts used for the [initial analysis](../initial-analysis.en.md) of October 8, 2026. They test the old code (`legacy/obbp_icp_v0.py`) and a prototype of the planned fixes on the synthetic bridges of `tests/conftest.py`. They do not change the repository and are not part of the `registration/` package.
 
 | File | Content |
 |---|---|

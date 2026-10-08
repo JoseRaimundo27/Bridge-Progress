@@ -1,7 +1,6 @@
 # Module II.2 — OBBP-ICP registration: work plan
 
 **Team:** Oscar and Gabriel · **Branch:** `bridge-segmentation` · **Updated:** October 8, 2026
-**Version française :** [plan.fr.md](plan.fr.md)
 
 This document summarises the planned work on Module II.2. Each task is detailed in Jira. The figures come from the [initial analysis](initial-analysis.en.md).
 
@@ -131,10 +130,7 @@ T0.1 → T0.3 ─┬─► T1.1 ─► T1.3 ─► T1.2 ─► (T1.4) ───�
 - **Before pushing:**
   - tests pass: `cd "ModuleTwo Registration/Python" && python -m pytest tests`;
   - the other person has reviewed the code.
-- **At the end of each task:**
-  - one line in the change log, `docs/suivi-des-modifications.md` (in French), with the measured result;
-  - one line in the work diary, `docs/journal-de-bord.md` (in French);
-  - the status updated in Jira.
+- **At the end of each task:** update its status in Jira, with the measured result.
 - **Measure before and after:** compare each improvement with the baseline (T0.1) or with the [initial analysis](initial-analysis.en.md).
 
 ## 8. When is a task done?

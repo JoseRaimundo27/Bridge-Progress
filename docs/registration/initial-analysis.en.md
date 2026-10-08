@@ -1,7 +1,6 @@
 # Module II.2 (registration) — Initial analysis and tests
 
 **Date:** Thursday, October 8, 2026 · **Branch:** `bridge-segmentation` (commit `84168a3`) · **Author:** Oscar (with Claude Code)
-**Version française :** [analyse-initiale.fr.md](analyse-initiale.fr.md) (full details)
 
 This document checks the state of Module II.2 **before** we start the tasks of the plan (T0.1 to T4.1). It answers three questions:
 1. Do the current code and installation work?
@@ -37,7 +36,7 @@ This document checks the state of Module II.2 **before** we start the tasks of t
 ## 2. Repository state
 
 - Gabriel's commits of Oct 5–6 are on `origin`. Oscar's local branch is 3 commits behind.
-- Oscar's fixes of Oct 2 (Modules I and II.1, see [MODIFICATIONS.md](../../MODIFICATIONS.md), in French) are **not committed** yet.
+- Oscar's fixes of Oct 2 (Modules I and II.1: 4D dates, uniform BIM density, IFC4X3, coordinate precision, test split, relative paths) were **not committed** yet.
 - A test merge (in a separate copy) shows that the Module I and II.1 files apply cleanly. `Makefile`, `README.md`, `requirements.txt` and `.gitignore` conflict: we keep Gabriel's version and add only the WSL detection and the README notes. Oscar's path change in `obbp-icp.py` is dropped, because it would be wrong after the move to `legacy/`.
 - ✅ **Done on October 8, after the analysis:** Gabriel's commits pulled, the October 2 fixes merged as above, git identity set. The merged code was re-checked (compilation, pytest, Module I, RandLA-Net dataset, Makefile); the test bench gives the same results.
 
