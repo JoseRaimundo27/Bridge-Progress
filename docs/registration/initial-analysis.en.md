@@ -22,6 +22,7 @@ This document checks the state of Module II.2 **before** we start the tasks of t
 | 9 | **Point-to-plane ICP: same accuracy, 2× faster** than point-to-point. | 🟢 | T1.6 |
 | 10 | The current script prints "Alinhamento concluído!" **even when the result is flipped**, and its Open3D windows **block forever** without a screen. | 🟠 | T0.1, T2.1 |
 | 11 | **With a realistic RandLA-Net segmentation (22 % clutter left), OBBP-ICP fails 4/4.** FPFH + RANSAC after outlier removal succeeds 4/4. | 🔴 | T3.3, T3.4 |
+| 12 | **Confirmed on 14 real bridges (drone, TLS, MLS):** prototype 53/56 on complete bridges (old code 20/56); partial bridges 0/56 with OBBP-ICP, 48/56 with FPFH + RANSAC. On drone bridges, the prototype alone fails 3/24. | 🔴 | T1.5, T3.4 |
 
 ## 1. Method
 
@@ -108,6 +109,55 @@ A first run with only 3 epochs predicted "not bridge" everywhere (mIoU 0.24): tr
 
 ⚠️ These are simple synthetic scenes and a very short training. They do not predict RandLA-Net's real performance on D19; they only show **how sensitive registration is to segmentation errors**.
 
+### Real bridges (team dataset, added October 20 and 27)
+
+**Data:** 14 real bridges from the team dataset [Gabl26/bridge-pointclouds](https://huggingface.co/datasets/Gabl26/bridge-pointclouds), 3 sensor types:
+- **UAV LiDAR** (drone, DJI Zenmuse L1): the 6 bridges. This is the closest to our project;
+- **TLS** (terrestrial laser): the 5 SemanticBridge test bridges;
+- **MLS** (mobile laser, Leica BLK2GO): the 3 SemanticBridge test bridges.
+
+**Setup:** there is no BIM for these bridges. The "as-planned" cloud is a random half of the bridge points (label 1); the scan is the other half (+ 1 cm noise), so the two clouds share no point. The scan is moved by a known transform, at 4 rotations (0°, 90°, 180°, 270°). Success = mean error < 20 cm.
+
+| Scan given to registration | Sensor | Old code (20 m) | OBBP-ICP prototype | FPFH + RANSAC + ICP |
+|---|---|---|---|---|
+| bridge only (perfect segmentation) | UAV | 5/24 | 21/24 | 21/24 |
+| | TLS | 10/20 | 20/20 | 19/20 |
+| | MLS | 5/12 | 12/12 | 10/12 |
+| | **all** | **20/56** | **53/56** | **50/56** |
+| partial bridge (50 % built) | UAV | 0/24 | 0/24 | 19/24 |
+| | TLS | 0/20 | 0/20 | 18/20 |
+| | MLS | 0/12 | 0/12 | 11/12 |
+| | **all** | **0/56** | **0/56** | **48/56** |
+| raw scan (ground + vegetation) | UAV | 0/24 | 0/24 | 13/24 |
+| | TLS | 0/20 | 8/20 | 5/20 |
+| | MLS | 0/12 | 0/12 | 3/12 |
+| | **all** | **0/56** | **8/56** | **21/56** |
+
+**Conclusions:**
+- **The synthetic results hold on 14 real bridges.** The old code fails 2 times out of 3 (flipped results). The planned Phase 1 fixes reach 53/56 on complete bridges.
+- **Drone bridges are harder:** the prototype fails 3 times out of 24 even on a complete bridge (Banwol, Ssanghak). OBBP-ICP alone is not enough; FPFH + RANSAC should be kept as a second method, and the best result chosen.
+- **Partial bridge:** OBBP-ICP fails every time (0/56); **FPFH + RANSAC succeeds 48/56**. T3.4 strategy (c) is required.
+- **Raw scans:** no method is reliable (21/56 at best). Segmentation before registration is required, as in the paper.
+- The TLS rows were computed on October 20 from the original SemanticBridge files (same scans; unlabeled points counted as clutter).
+
+### Scan vs BIM from a real IFC bridge model (added October 27)
+
+**Data:** the buildingSMART sample [`Infra-Bridge.ifc`](https://github.com/buildingSMART/Sample-Test-Files) (IFC4X3_ADD2: 3 bridges, 44 elements). **Module I runs on it without change:** 44/44 elements converted, 110,000-point as-planned cloud in 7 s. The model has no 4D schedule.
+
+**Setup:** the as-planned cloud is the Module I output for the full model. The scan is an independent sampling of the elements already built at a construction stage (+ 1 cm noise), moved by a known transform (4 rotations).
+
+| Construction stage (scan) | Old code (20 m) | OBBP-ICP prototype | FPFH + RANSAC + ICP |
+|---|---|---|---|
+| foundations only (footings, walls, fill) | 0/4 | **4/4** | 3/4 |
+| foundations + piers | 0/4 | **4/4** | 2/4 |
+| complete bridge | 4/4 | 4/4 | 4/4 |
+
+**Conclusions:**
+- **First end-to-end test Module I → Module II.2 on a real IFC bridge:** it works.
+- **"Partial" is not always hard:** when the built elements are spread along the whole bridge (all foundations first), the centre and the axis of the scan stay close to the BIM, and OBBP-ICP succeeds. It fails when one part of the bridge is missing (one span built, the next not; see the tests above).
+- **No method wins every case:** FPFH + RANSAC is weaker here (simple, regular shapes). The final algorithm should run both and keep the best result.
+- One model only: to repeat on the project IFC (RSP-116RJ) when available.
+
 ## 5. Impact on the task plan
 
 | Task | Verdict | Proposed change |
@@ -141,6 +191,9 @@ cd docs/registration/analyse
 ../../../.venv/bin/python experiments.py          # E1 to E12 (about 10 min on CPU)
 ../../../.venv/bin/python randlanet_test.py 12    # RandLA-Net, 12 epochs (about 30 min on CPU)
 ../../../.venv/bin/python randla_followup.py      # cleaning of the RandLA-Net output (after randlanet_test.py)
+../../../.venv/bin/python real_bridges.py uav_lidar                    # 6 drone bridges (team dataset, ~40 min on CPU)
+../../../.venv/bin/python real_bridges.py semanticbridge:test          # SemanticBridge test bridges (TLS + MLS)
+../../../.venv/bin/python ifc_bridge.py                                # scan vs BIM from the buildingSMART IFC bridge (~1 min)
 ```
 
 Raw results are saved in `analyse/results/*.json`.

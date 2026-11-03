@@ -13,5 +13,6 @@ tqdm
 pyyaml
 addict
 scikit-learn
+huggingface_hub  # download of the team dataset (Gabl26/bridge-pointclouds)
 # Tests
 pytest

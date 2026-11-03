@@ -1,0 +1,272 @@
+[
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 8.840772897395375
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.12013863457472851
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.20609335798903528
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.796457375768572
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.771035879631267
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.11531099486230537
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.921611056731232
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 27.590385471905332
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 27.682279196327457
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 14.946059900765913
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.023476582980012484
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.040346266962999616
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.29579251017634
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.35351332358351
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.027490414225200006
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 45.3191027640414
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 45.441789286876016
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 45.351834396579946
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.631543639047106
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.020387469916332182
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.020392540365534083
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.271344211188733
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.125248993244643
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.024182221045844624
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.51999057107991
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 42.372257679876746
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.87650329488545
+ }
+]

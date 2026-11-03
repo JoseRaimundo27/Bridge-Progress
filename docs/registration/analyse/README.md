@@ -7,6 +7,8 @@ Scripts used for the [initial analysis](../initial-analysis.en.md) of October 8,
 | `harness.py` | Synthetic scans (rotation, tilt, partial bridge, scale, clutter), real-error metric, prototype of the planned fixes, FPFH + RANSAC |
 | `experiments.py` | Experiments E1 to E12 |
 | `randlanet_test.py` | RandLA-Net (repo's `PonteDataset`) on synthetic scenes, then registration of raw / segmented scans |
+| `real_bridges.py` | Registration on real bridges of the team dataset `Gabl26/bridge-pointclouds` (complete, partial, raw) |
+| `ifc_bridge.py` | Scan vs BIM: Module I as-planned cloud from the buildingSMART IFC4.3 bridge, scans at 3 construction stages |
 | `results/` | Raw results (JSON) |
 
 ```bash

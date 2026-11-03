@@ -58,6 +58,13 @@ Data files are not versioned. Put them in these locations:
 | Segmentation | `ModuleTwo RandlaNET/DATASET/Ponte_Custom3D/{train,val,test}/*.ply` (fields `x y z red green blue label`) |
 | Registration | `ModuleTwo Registration/AsBuilt/*.ply` and `ModuleTwo Registration/AsPlanned/*.ply` |
 
+Team dataset for segmentation: [Gabl26/bridge-pointclouds](https://huggingface.co/datasets/Gabl26/bridge-pointclouds) (UAV LiDAR bridges + [SemanticBridge](https://github.com/mvg-inatech/3d_bridge_segmentation) real and synthetic bridges, already in the format above; `label`: -1 unlabeled, 0 not bridge, 1 bridge). Download it to `ModuleTwo RandlaNET/DATASET/bridge-pointclouds/`, then build the splits:
+
+```bash
+.venv/bin/hf download Gabl26/bridge-pointclouds --repo-type dataset --local-dir "ModuleTwo RandlaNET/DATASET/bridge-pointclouds"
+cd "ModuleTwo RandlaNET/Python" && ../../.venv/bin/python prepare_splits.py   # symlinks in DATASET/Ponte_Custom3D/{train,val,test}
+```
+
 `ModuleTwo RandlaNET/Python/txt_ply.py` converts a `x y z r g b label` text file (for example a CloudCompare export) to this PLY format.
 
 The input file names are set at the top of each script. Paths are relative to the script's module folder, so the scripts work from any directory and on any machine.
@@ -96,5 +103,6 @@ Run these from their own `Python/` folder:
 ## References
 
 - K. Tang, W. Shi (2026). _RandLA-Net-Assisted Scan-vs-BIM Framework with Adaptive Parameter Optimization for Construction Progress Monitoring_. J. Comput. Civ. Eng.
+- SemanticBridge: _SemanticBridge — A dataset for 3D semantic segmentation of bridges and domain gap analysis_. Developments in the Built Environment 26 (2026).
 - Q. Hu et al. (2020). _RandLA-Net: Efficient Semantic Segmentation of Large-Scale Point Clouds_. CVPR.
 - [Open3D-ML RandLA-Net documentation](https://www.open3d.org/docs/latest/python_api/open3d.ml.torch.models.RandLANet.html)

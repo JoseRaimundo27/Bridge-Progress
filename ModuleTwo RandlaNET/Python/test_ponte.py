@@ -12,7 +12,7 @@ model = ml3d.models.RandLANet(
     num_points=40960,  
     num_classes=2,     
     in_channels=6,     
-    ignored_label_inds=[]
+    ignored_label_inds=[-1]  # label -1 = sem rótulo (dataset bridge-pointclouds)
 )
 
 # 3. Monta o Pipeline (Não precisamos mais de batch_size ou learning rate aqui)
