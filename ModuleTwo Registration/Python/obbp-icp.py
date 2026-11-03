@@ -197,8 +197,8 @@ def obbp_icp_corrigido(scan_raw, bim_raw, voxel_size=0.1, square_tol=0.15, icp_d
 # =========================================================
 if __name__ == "__main__":
     # 1. Defina os caminhos dos seus arquivos .ply
-    scan_path = "../AsBuilt/SEGMENTED AOE D19 cloudpoint.ply"
-    bim_path = "../AsPlanned/asplanned_pointcloud_d19.ply"
+    scan_path = "../AsBuilt/S07/Segmented S07.ply"
+    bim_path = "../AsPlanned/S07/asplanned_pointcloud_s07.ply"
     
     print("Carregando nuvens de pontos...")
     scan_raw = o3d.io.read_point_cloud(scan_path)
@@ -233,3 +233,16 @@ if __name__ == "__main__":
     
     print("Visualizando resultado final (Scan Registrado = Verde, BIM = Azul).")
     o3d.visualization.draw_geometries([scan_regis, bim_raw], window_name="Resultado Final OBBP-ICP")
+
+     # 5. Salvar o As-Built registrado em PLY
+    output_path = "../Results/s07_asbuilt_registered.ply"
+
+    # Recarrega o scan original (sem a pintura de visualização) e aplica a transformação final
+    scan_registrado_final = o3d.io.read_point_cloud(scan_path)
+    scan_registrado_final.transform(m_total)
+
+    ok = o3d.io.write_point_cloud(output_path, scan_registrado_final)
+    if ok:
+        print(f"As-Built registrado salvo em: {output_path}")
+    else:
+        print("Erro ao salvar o arquivo PLY.")
