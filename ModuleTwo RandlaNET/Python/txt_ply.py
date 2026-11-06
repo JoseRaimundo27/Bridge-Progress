@@ -1,9 +1,13 @@
+from pathlib import Path
+
 import numpy as np
 
-#txt_path = "/home/joserasj/RandlaNET/DATASET/Ponte_Custom3D/train/ponte.txt"
-#ply_path = "/home/joserasj/RandlaNET/DATASET/Ponte_Custom3D/train/ponte.ply"
-txt_path = "/home/joserasj/RandlaNET/DATASET/D19/ponte.txt"
-ply_path = "/home/joserasj/RandlaNET/DATASET/D19/ponte.ply"
+PASTA_DATASET = Path(__file__).resolve().parent.parent / "DATASET"
+
+#txt_path = PASTA_DATASET / "Ponte_Custom3D" / "train" / "ponte.txt"
+#ply_path = PASTA_DATASET / "Ponte_Custom3D" / "train" / "ponte.ply"
+txt_path = PASTA_DATASET / "D19" / "ponte.txt"
+ply_path = PASTA_DATASET / "D19" / "ponte.ply"
 
 print("Lendo o arquivo TXT...")
 data = np.loadtxt(txt_path)
@@ -16,9 +20,10 @@ with open(ply_path, 'w') as f:
     f.write("ply\n")
     f.write("format ascii 1.0\n")
     f.write(f"element vertex {num_points}\n")
-    f.write("property float x\n")
-    f.write("property float y\n")
-    f.write("property float z\n")
+    # double (float64): em float32 coordenadas UTM perdem a precisão (~0,5 m)
+    f.write("property double x\n")
+    f.write("property double y\n")
+    f.write("property double z\n")
     f.write("property uchar red\n")
     f.write("property uchar green\n")
     f.write("property uchar blue\n")

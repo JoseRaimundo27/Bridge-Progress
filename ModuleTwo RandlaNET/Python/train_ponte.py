@@ -1,9 +1,10 @@
+import torch
 import open3d.ml.torch as ml3d
-from dataset_ponte import PonteDataset
+from dataset_ponte import PonteDataset, PASTA_PONTE_CUSTOM3D, PASTA_LOGS
 
 # Carrega o nosso novo e maravilhoso Dataset de PLY
 dataset = PonteDataset(
-    dataset_path="/home/joserasj/RandlaNET/DATASET/Ponte_Custom3D"
+    dataset_path=PASTA_PONTE_CUSTOM3D
 )
 
 # Configura a Rede Neural RandLA-Net
@@ -11,7 +12,7 @@ model = ml3d.models.RandLANet(
     num_points=40960,  
     num_classes=2,     
     in_channels=6,    
-    ignored_label_inds=[]
+    ignored_label_inds=[-1]  # label -1 = sem rótulo (dataset bridge-pointclouds)
 )
 
 #  Monta o Pipeline de Treino
@@ -28,8 +29,8 @@ pipeline = ml3d.pipelines.SemanticSegmentation(
     },
     scheduler_gamma=0.95,
     num_workers=0,
-    main_log_dir="./logs_ponte",
-    device="cuda"
+    main_log_dir=str(PASTA_LOGS),
+    device="cuda" if torch.cuda.is_available() else "cpu"
 )
 
 print("Iniciando o treinamento na GPU...")

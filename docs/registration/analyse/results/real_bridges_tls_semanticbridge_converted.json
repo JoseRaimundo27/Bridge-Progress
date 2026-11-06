@@ -1,0 +1,362 @@
+[
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 8.393784230132121
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.011254955601881207
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.147961029878842
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 9.174762999699166
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.061030042733087
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1301089166583668
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.958768943958525
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 24.84428231531747
+ },
+ {
+  "bridge": "bridge_13_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 9.692519037398158
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.015826585894025
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022879502224412672
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.020748132445100802
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.574793359598077
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.04511645631068
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.005202542183937655
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 24.0780285570548
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.038208134533356
+ },
+ {
+  "bridge": "bridge_17_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.296634443683931
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.03745254993927
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01944811433951146
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022528340180497475
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.564486679772816
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.934203404280279
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.017380834327772876
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.806401138510157
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 42.36917839250832
+ },
+ {
+  "bridge": "bridge_19_fr_rtc",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 38.80551158274642
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 16.374724398961163
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.039589941769332115
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03957050400388644
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 18.717424584002586
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.553116360741498
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04501867189255354
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 21.583227365568494
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.05573825945214422
+ },
+ {
+  "bridge": "bridge_1_cb_faro",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 2.836514499146572
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.015100604727259
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.021127893886490695
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.021347761745709806
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.27817004288926
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "partial bridge (50 %)",
+  "method": "prototype v1",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 12.669487451820402
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.028280143709034988
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.037939550849384
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.012127764381541443
+ },
+ {
+  "bridge": "bridge_7_cb_faro",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.012159122833384313
+ }
+]

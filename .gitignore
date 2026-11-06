@@ -2,6 +2,7 @@
 env/
 .venv/
 __pycache__/
+.pytest_cache/
 *.py[cod]
 
 # ModuleOne BIMtoPC
@@ -17,5 +18,10 @@ ModuleTwo RandlaNET/Python/*log*/
 
 # ModuleTwo Registration
 ModuleTwo Registration/AsBuilt/
+ModuleTwo Registration/AsPlanned/
+ModuleTwo Registration/outputs/
 
 *.ply
+
+# Windows download markers (WSL)
+*Zone.Identifier

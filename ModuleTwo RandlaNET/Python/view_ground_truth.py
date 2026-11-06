@@ -1,10 +1,13 @@
 import os
 import glob
+from pathlib import Path
+
 import numpy as np
 import open3d as o3d
 
 # 1. Caminho para a pasta onde estão suas anotações
-annotations_dir = "/home/joserasj/Módulos/ModuleTwo RandlaNET/DATASET/Rafaela/Segmentacao/Backup_Original/Annotations"
+PASTA_DATASET = Path(__file__).resolve().parent.parent / "DATASET"
+annotations_dir = str(PASTA_DATASET / "Rafaela" / "Segmentacao" / "Backup_Original" / "Annotations")
 
 # 2. Definir as cores para cada classe (Valores entre 0 e 1)
 COLOR_MAP = {

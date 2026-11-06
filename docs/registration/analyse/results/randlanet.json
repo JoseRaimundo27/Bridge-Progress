@@ -1,0 +1,57 @@
+{
+ "segmentation": {
+  "epochs": 12,
+  "train_s": 1573.7015329300011,
+  "infer_s": 19.754428627999005,
+  "accuracy": 0.8534476843910807,
+  "iou_bridge": 0.7783312577833126,
+  "iou_not_bridge": 0.6980918727915194,
+  "miou": 0.7382115652874159,
+  "bridge_points_kept": "60000/60000",
+  "clutter_points_left": 17088
+ },
+ "registration": [
+  {
+   "scan": "raw",
+   "points": 116600,
+   "method": "legacy thr 20 m",
+   "success": "0/4",
+   "d_avg": 10.915034411298628
+  },
+  {
+   "scan": "raw",
+   "points": 116600,
+   "method": "prototype v1",
+   "success": "0/4",
+   "d_avg": 11.039900280194642
+  },
+  {
+   "scan": "ground truth segmentation",
+   "points": 60000,
+   "method": "legacy thr 20 m",
+   "success": "2/4",
+   "d_avg": 0.6334602038354341
+  },
+  {
+   "scan": "ground truth segmentation",
+   "points": 60000,
+   "method": "prototype v1",
+   "success": "4/4",
+   "d_avg": 0.08537727996467431
+  },
+  {
+   "scan": "RandLA-Net segmentation",
+   "points": 77088,
+   "method": "legacy thr 20 m",
+   "success": "0/4",
+   "d_avg": 3.623861681023567
+  },
+  {
+   "scan": "RandLA-Net segmentation",
+   "points": 77088,
+   "method": "prototype v1",
+   "success": "0/4",
+   "d_avg": 3.239869829568074
+  }
+ ]
+}

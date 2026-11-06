@@ -1,0 +1,74 @@
+[
+ {
+  "stage": "foundations only",
+  "scan_points": 36513,
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.92684560565654
+ },
+ {
+  "stage": "foundations only",
+  "scan_points": 36513,
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002808226312183781
+ },
+ {
+  "stage": "foundations only",
+  "scan_points": 36513,
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0031118819064881688
+ },
+ {
+  "stage": "foundations + piers",
+  "scan_points": 45513,
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 20.647593892650292
+ },
+ {
+  "stage": "foundations + piers",
+  "scan_points": 45513,
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001030269433822187
+ },
+ {
+  "stage": "foundations + piers",
+  "scan_points": 45513,
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 11.02163668778947
+ },
+ {
+  "stage": "complete bridge",
+  "scan_points": 66315,
+  "method": "legacy (thr 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.028986292235581003
+ },
+ {
+  "stage": "complete bridge",
+  "scan_points": 66315,
+  "method": "prototype v1",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0010722335164562598
+ },
+ {
+  "stage": "complete bridge",
+  "scan_points": 66315,
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001266062993347551
+ }
+]

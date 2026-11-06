@@ -1,0 +1,74 @@
+[
+ {
+  "built": "100 %",
+  "method": "legacy thr 1 m",
+  "success": "4/4",
+  "median_err_m": 0.012768760687098927
+ },
+ {
+  "built": "100 %",
+  "method": "prototype v1",
+  "success": "4/4",
+  "median_err_m": 0.0008072235948123696
+ },
+ {
+  "built": "100 %",
+  "method": "FPFH+RANSAC+ICP",
+  "success": "4/4",
+  "median_err_m": 0.0008512450552802485
+ },
+ {
+  "built": "70 %",
+  "method": "legacy thr 1 m",
+  "success": "0/4",
+  "median_err_m": 26.90050729364785
+ },
+ {
+  "built": "70 %",
+  "method": "prototype v1",
+  "success": "0/4",
+  "median_err_m": 26.930137518344544
+ },
+ {
+  "built": "70 %",
+  "method": "FPFH+RANSAC+ICP",
+  "success": "4/4",
+  "median_err_m": 0.003346334893701948
+ },
+ {
+  "built": "50 %",
+  "method": "legacy thr 1 m",
+  "success": "0/4",
+  "median_err_m": 21.849131795051363
+ },
+ {
+  "built": "50 %",
+  "method": "prototype v1",
+  "success": "0/4",
+  "median_err_m": 21.99152271985746
+ },
+ {
+  "built": "50 %",
+  "method": "FPFH+RANSAC+ICP",
+  "success": "3/4",
+  "median_err_m": 0.0045017751573226605
+ },
+ {
+  "built": "30 %",
+  "method": "legacy thr 1 m",
+  "success": "0/4",
+  "median_err_m": 28.197129506184687
+ },
+ {
+  "built": "30 %",
+  "method": "prototype v1",
+  "success": "0/4",
+  "median_err_m": 28.462879794166582
+ },
+ {
+  "built": "30 %",
+  "method": "FPFH+RANSAC+ICP",
+  "success": "3/4",
+  "median_err_m": 0.002746840004987099
+ }
+]

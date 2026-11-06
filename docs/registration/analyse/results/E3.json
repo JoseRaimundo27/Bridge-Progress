@@ -1,0 +1,42 @@
+[
+ {
+  "coords": "local",
+  "test": "legacy, thr 1 m",
+  "err_m": 0.012437892335773467,
+  "rot_err_deg": 0.027245497239003335,
+  "d_avg": 0.08568537989990964,
+  "ok": "\u2705"
+ },
+ {
+  "coords": "local",
+  "test": "prototype v1 (offset)",
+  "err_m": 0.0006077352083751398,
+  "rot_err_deg": 0.003909413398625406,
+  "d_avg": 0.08543752213561177,
+  "ok": "\u2705"
+ },
+ {
+  "coords": "UTM",
+  "test": "legacy, thr 1 m",
+  "err_m": 0.012436135926521085,
+  "rot_err_deg": 0.026459052451376492,
+  "d_avg": 0.08568945721774675,
+  "ok": "\u2705"
+ },
+ {
+  "coords": "UTM",
+  "test": "prototype v1 (offset)",
+  "err_m": 0.0006522051361379225,
+  "rot_err_deg": 0.005006571759377167,
+  "d_avg": 0.08543887054051098,
+  "ok": "\u2705"
+ },
+ {
+  "storage": "Open3D write_point_cloud (PLY)",
+  "max_error_m": 0.0
+ },
+ {
+  "storage": "float32 (e.g. CloudCompare/PDAL export as float)",
+  "max_error_m": 0.25
+ }
+]

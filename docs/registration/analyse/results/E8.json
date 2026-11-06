@@ -1,0 +1,50 @@
+[
+ {
+  "bim": "2000 pts / element",
+  "method": "legacy thr 20 m",
+  "points": 10000,
+  "success": "1/4",
+  "err_m": 28.38766526595381,
+  "d_avg": 1.0490259675758047
+ },
+ {
+  "bim": "2000 pts / element",
+  "method": "legacy thr 1 m",
+  "points": 10000,
+  "success": "0/4",
+  "err_m": 1.3140452499903557,
+  "d_avg": 0.6828738255349677
+ },
+ {
+  "bim": "2000 pts / element",
+  "method": "prototype v1",
+  "points": 10000,
+  "success": "0/4",
+  "err_m": 4.267145421076403,
+  "d_avg": 1.4433232066057764
+ },
+ {
+  "bim": "uniform (by area)",
+  "method": "legacy thr 20 m",
+  "points": 60000,
+  "success": "1/4",
+  "err_m": 28.389473785340485,
+  "d_avg": 0.9043504142276617
+ },
+ {
+  "bim": "uniform (by area)",
+  "method": "legacy thr 1 m",
+  "points": 60000,
+  "success": "4/4",
+  "err_m": 0.012771228169256552,
+  "d_avg": 0.08568916410235329
+ },
+ {
+  "bim": "uniform (by area)",
+  "method": "prototype v1",
+  "points": 60000,
+  "success": "4/4",
+  "err_m": 0.0007783709863978188,
+  "d_avg": 0.08544032455537179
+ }
+]
