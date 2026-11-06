@@ -1,5 +1,5 @@
-VENV := $(CURDIR)/.venv
-PYTHON ?= $(VENV)/bin/python
+VENV := $(CURDIR)/env
+PYTHON ?= $(VENV)/bin/python3
 
 # Open3D-ML 0.20 is built against PyTorch 2.13
 OPEN3D_VERSION ?= 0.20.0
