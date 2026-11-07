@@ -21,7 +21,7 @@ The method is based on:
                         quantities and cost indicators (BCWS, ACWP, SV, SPI)
 ```
 
-1. **BIM parsing**: reads the IFC model, extracts each element's `GlobalId`, quantities (volume, area), schedule dates and unit price, and samples its geometry into a synthetic as-planned point cloud.
+1. **[BIM parsing](./ModuleOne%20BIMtoPC/README.md)**: reads the IFC model, extracts each element's `GlobalId`, quantities (volume, area), schedule dates and unit price, and samples its geometry into a synthetic as-planned point cloud.
 2. **AI-assisted preprocessing**: [RandLA-Net](https://github.com/QingyongHu/RandLA-Net) semantic segmentation removes everything that is not the bridge (terrain, vegetation, cranes, equipment). The OBBP-ICP algorithm then aligns the cleaned scan with the as-planned cloud: it pre-aligns the oriented bounding boxes, refines with ICP and keeps the best candidate.
 3. **Element status recognition**: for each BIM element, the scan points around it are projected onto grids, and their coverage of the element tells whether it is built.
 4. **Progress analytics**: the element status is combined with the schedule and the unit prices to classify each element and to compute the progress deviation in quantity and cost.
