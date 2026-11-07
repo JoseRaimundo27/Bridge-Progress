@@ -20,7 +20,7 @@ The processing follows a parallel workflow to ensure the full extraction of both
 ### 2. Procedures and Data Treatment
 The processing follows a parallel workflow to guarantee the complete extraction of both geometry and metadata:
 - **Coordinate Correction (UTM to Local):** Infrastructure models usually use georeferenced coordinates (UTM) with very high scalar values. To avoid floating-point precision loss in Open3D, the model is translated to a local origin (0,0,0) prior to sampling.
-- **Parallel Semantic Extraction:** Reads the 4D and 5D properties (dates, costs, volumes) and maps them by the unique `GlobalId` of each element.
+- **Parallel Semantic Extraction:** Reads the 4D properties  and maps them by the unique `GlobalId` of each element.
 - **Cloud Generation (Poisson Disk Sampling):** The mesh of each physical element is isolated, converting parametric vertices and faces into a `TriangleMesh`. A synthetic point cloud (*as-planned*) is then generated using the **Poisson Disk** algorithm. The number of points generated per element is proportional to its surface area, ensuring a homogeneous spatial density for the entire structure, regardless of the size of the pieces. The union of all individual clouds forms the global cloud.
 
 ### 3. Evaluation and Performance Metrics
@@ -52,4 +52,5 @@ The easiest way to run the full pipeline of this module is by using the Makefile
 ```bash
 cd ../../  # Return to the root of the project
 make m1
+```
 [⬅ Back to the main README](../README.md)
