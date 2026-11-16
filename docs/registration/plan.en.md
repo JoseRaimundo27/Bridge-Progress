@@ -1,6 +1,6 @@
 # Module II.2 — OBBP-ICP registration: work plan
 
-**Team:** Oscar and Gabriel · **Branch:** `bridge-segmentation` · **Updated:** October 8, 2026
+**Team:** Oscar and Gabriel · **Branch:** `bridge-segmentation` · **Updated:** November 5, 2026
 
 This document summarises the planned work on Module II.2. Each task is detailed in Jira. The figures come from the [initial analysis](initial-analysis.en.md).
 
@@ -75,10 +75,10 @@ Priority after the analysis: 🔴 high · 🟠 normal · 🟡 depends on the dat
 | T1.2 Recentering | S | A | 🟡 | Common float64 offset. Lower priority: Open3D already computes in float64 (E3) |
 | T1.3 XY axes (2D PCA) | M | A | 🟠 | Angle found within ±1°, no NaN. The prototype reaches < 0.3° (E9) |
 | T1.4 Z leveling | M | A | 🟡 | Only if T0.3 shows a tilt above ~10° (E4) |
-| T1.5 Multi-scale ICP and candidate choice | M | B | 🔴 | No more flipped results. Prototype: 8/8 (E12) |
+| T1.5 Multi-scale ICP and candidate choice | M | B | 🔴 | No more flipped results. Prototype: 8/8 (E12). **Added on November 4:** default thresholds `[20, 5, 1, 0.3, 0.1]` m. Generated bridges: 40/240 from 1 m, 232/240 from 20 m. Complete real bridges: 114/132, then 130/132 |
 | T1.6 Point-to-plane | S | B | 🟠 | Comparison table. Point-to-plane is 2× faster on synthetic bridges (E10) |
 | T1.7 Scale | S | B | 🟡 | Only if T0.3 finds a scale error. 2 % is enough to break the result (E6) |
-| **T1.8 Failure check** *(proposed)* | S | to decide | 🟠 | Warn when the registration is doubtful, instead of reporting success |
+| **T1.8 Failure check** *(proposed)* | S | to decide | 🟠 | Warn when the registration is doubtful, instead of reporting success. Cases to catch: early stages and small isolated elements (RefSite3D) |
 
 ### Phase 2 — Inputs, outputs, integration
 
@@ -94,8 +94,8 @@ Priority after the analysis: 🔴 high · 🟠 normal · 🟡 depends on the dat
 |---|---|---|---|---|
 | T3.1 Synthetic tests | M | A | 🟠 | All tests pass; error < 0.5° and < 2 × voxel |
 | T3.2 Rotation benchmark | L | B | 🟠 | Table like Table 2 of the paper. Success measured against the known transform |
-| T3.3 Effect of segmentation | M | B | 🟠 | Table like Table 1 of the paper (raw / manual / RandLA-Net). With 22 % clutter left by RandLA-Net, OBBP-ICP fails 4/4 on synthetic data |
-| T3.4 Partial bridge | L | Both | 🔴 **move earlier** | Normal case during construction: 0/12 today, 10/12 with FPFH + RANSAC (E5). FPFH + RANSAC also handles the noisy RandLA-Net output |
+| T3.3 Effect of segmentation | M | B | 🟠 | Table like Table 1 of the paper (raw / manual / RandLA-Net). With 22 % clutter left by RandLA-Net, OBBP-ICP fails 4/4 on synthetic data. Raw scans: 54/92 at best on real bridges, 2/28 on RefSite3D |
+| T3.4 Partial bridge | L | Both | 🔴 **move earlier** | Normal case during construction. Bridge cut at 50 %: 4/132 with ICP, 96/132 with FPFH + RANSAC. **Combined method:** run prototype 20 m and FPFH + RANSAC, keep the best fitness (100/132; generated bridges: 237/240). It also handles the noisy RandLA-Net output |
 | T3.5 Second bridge (S07) | S | Both | 🟠 | Same metrics as D19, same parameters |
 
 ### Phase 4 — Delivery
@@ -121,6 +121,8 @@ T0.1 → T0.3 ─┬─► T1.1 ─► T1.3 ─► T1.2 ─► (T1.4) ───�
 - T3.4 starts earlier: it is the main risk of the module.
 - T1.2 moves after T1.3: it is less urgent.
 - T1.8 is added.
+- T1.5 uses wider ICP thresholds, and T3.4 delivers the combined method (November 4 tests).
+- RefSite3D (real scans with planned models and object labels) can also serve as a test set for Module III.
 
 **Important rule:** T1.1 fills every file of the package. **Merge it before** person B works on `fine_alignment.py` (T1.5), to avoid conflicts.
 

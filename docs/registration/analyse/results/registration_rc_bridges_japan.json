@@ -1,0 +1,1352 @@
+[
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 2.001745008404824
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02399157739829728
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02399526748833523
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 2.024004993968478
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02399526748833523
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 2.4669402985325046
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.509507462860749
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.5095074628607466
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 2.3055113739382134
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 1.4631154971546318
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.412192531956819
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.411857824730791
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.409074847935892
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.879653289239207
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_1",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.637690236971888
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 2.759037285697711
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02293825629650225
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022951197912209124
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.026733200102990767
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022951197912209124
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.056595780140459
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.203929263717626
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.184778862360967
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.09737840858713898
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.09737840858713898
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.823515149715194
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.471772576967476
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.56419262177376
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.664946391965961
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_2",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.56419262177376
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 4.547633966641428
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.040294927976657915
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04029977105459008
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03883239421890078
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04029977105459008
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.403284029910424
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.039331813937855
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.542734990885814
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.05225512484033085
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.05225512484033085
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.34624733479242
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.931466191881238
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.64426485128946
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 7.356550097797802
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_3",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 7.356550097797802
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 4.643235488907895
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.019529784826649486
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.019529381642695506
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0259571823897473
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.019529381642695506
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.100206602279762
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.264193682593796
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.783653415537287
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02846598252486489
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02846598252486489
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.6317429725303019
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03802859354990064
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03802835940854467
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.04382669311755706
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_4",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.038035798944239835
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.312836666556308
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.07824442903552556
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.07834396902650513
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06800124786303768
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04979496669556834
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.095488128741986
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.643640347979012
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.3626526754621615
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.198121594078839
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.198121594078839
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 12.790182826147655
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.265391674665768
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.218685647847025
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.841452243641378
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_5",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.219730310412363
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.664333215090096
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.028322185504547064
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.028299445633730845
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03273036481394954
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.028299445633730845
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.937152724238921
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.9041755245406975
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.843017334102612
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0615537360046105
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0615537360046105
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.35459323975179
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.032267090696522775
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03229229519479686
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 7.677815654892074
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_6",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03229229519479686
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.160459189988992
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02596856950295649
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.025973318920819558
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.177431178097869
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.025973318920819558
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.814089447621424
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.794757189787147
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.2483812756236
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1707735713916611
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1707735713916611
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.2275347839754005
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.10580837671791386
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.1058026639760144
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.754767012347534
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_7",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.1058026639760144
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.5105272694370635
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022121572122491936
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022121205680676218
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.07181529736978555
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022121205680676218
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.343475103009288
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.36368944153955
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.645544128795274
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.51194552706354
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.51194552706354
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.3662184643384372
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06717246071295455
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06717799673125185
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 6.468766661733115
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_8",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06717799673125185
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 6.511842896154983
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026245863354129206
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02624244114718633
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0267290923624909
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02624244114718633
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.448552132128649
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.371391857118958
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.672341750727471
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08797736569476608
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08797736569476608
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.596501932479223
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.902151861920717
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.1497030250658855
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04933042777658586
+ },
+ {
+  "source": "rc_bridges_japan",
+  "bridge": "Bridge_9",
+  "sensor": "Matterport Pro3 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04933042777658586
+ }
+]

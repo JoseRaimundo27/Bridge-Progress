@@ -23,23 +23,27 @@ from plyfile import PlyData
 
 import harness as h
 
-DATA = h.REPO / "ModuleTwo RandlaNET" / "DATASET" / "bridge-pointclouds"
+_DATASETS = h.REPO / "ModuleTwo RandlaNET" / "DATASET"
+# private team dataset (GETEC-UFBA, more sources) if downloaded, else the public one (Gabl26)
+DATA = next((d for d in (_DATASETS / "bridge-pointclouds-getec", _DATASETS / "bridge-pointclouds") if d.exists()),
+            _DATASETS / "bridge-pointclouds")
 OUT = Path(__file__).resolve().parent / "results"
 ANGLES = (0, 90, 180, 270)
 MAX_SCAN = 300_000
-METHODS = ("legacy (thr 20 m)", "prototype v1", "FPFH+RANSAC+ICP")
 
 
 def scenes(selector):
     """'source[:split[:sensor text]]' -> list of (source, scene, sensor) from scenes.csv."""
     source, split, sensor = (selector.split(":") + ["", ""])[:3]
-    with open(DATA / source / "scenes.csv", newline="") as f:
+    folder = DATA / source / "processed" if (DATA / source / "processed").exists() else DATA / source
+    with open(folder / "scenes.csv", newline="") as f:
         return [(source, r["scene"], r["sensor"]) for r in csv.DictReader(f)
                 if (not split or r["split"] == split) and sensor in r["sensor"]]
 
 
 def load(source, scene):
-    v = PlyData.read(str(DATA / source / f"{scene}.ply"))["vertex"].data
+    folder = DATA / source / "processed" if (DATA / source / "processed").exists() else DATA / source
+    v = PlyData.read(str(folder / f"{scene}.ply"))["vertex"].data
     pts = np.c_[v["x"], v["y"], v["z"]].astype(np.float64)
     return pts - pts.mean(0), np.asarray(v["label"]) == 1  # label: -1 unlabeled, 0 not bridge, 1 bridge
 
@@ -56,21 +60,15 @@ def keep_first_part(pts, frac):
     return pts[s <= s.min() + frac * np.ptp(s)]
 
 
-def run(method, scan_pts, bim, T):
-    scan = cloud(scan_pts).transform(T)
-    if method == METHODS[0]:
-        M = h.legacy.obbp_icp_corrigido(scan, bim, voxel_size=0.2, icp_dist_thresh=20.0)[2]
-    elif method == METHODS[1]:
-        M = h.obbp_v1(scan, bim)[0]["M"]
-    else:
-        M = h.fpfh_ransac(scan, bim)
-    return h.registration_error(M, T, scan_pts)[0]
-
-
 def main(selector):
-    rng = np.random.default_rng(0)
-    rows = []
+    name = selector.replace(":", "_").replace(" ", "")
+    out = OUT / f"registration_{name}.json"
+    rows = json.loads(out.read_text()) if out.exists() else []  # resume: results are saved after each bridge
+    done = {r["bridge"] for r in rows}
     for source, scene, sensor in scenes(selector):
+        if scene in done:
+            continue
+        rng = np.random.default_rng(abs(hash_name(scene)))
         pts, is_bridge = load(source, scene)
         bridge = pts[is_bridge]
         half = rng.random(len(bridge)) < 0.5
@@ -79,27 +77,36 @@ def main(selector):
         cases = {
             "bridge only (perfect segmentation)": scan_bridge,
             "partial bridge (50 %)": keep_first_part(scan_bridge, 0.5),
-            "raw scan (ground + vegetation)": np.vstack([scan_bridge, pts[~is_bridge]]),
         }
+        if (~is_bridge).sum() > 0.05 * len(pts):  # some sources contain the bridge only
+            cases["raw scan (ground + vegetation)"] = np.vstack([scan_bridge, pts[~is_bridge]])
         for case, scan_pts in cases.items():
             if len(scan_pts) > MAX_SCAN:
                 scan_pts = scan_pts[rng.choice(len(scan_pts), MAX_SCAN, replace=False)]
-            for method in METHODS:
-                errs = [run(method, scan_pts, bim, h.rigid_transform(a, (120.0, -45.0, 3.0))) for a in ANGLES]
-                ok = sum(e < h.SUCCESS_M for e in errs)
-                rows.append(dict(source=source, bridge=scene, sensor=sensor, case=case, method=method, success=ok,
-                                 trials=len(ANGLES), median_err_m=float(np.median(errs))))
-                print(f"{scene:18s} | {case:36s} | {method:18s} | {ok}/{len(ANGLES)} | median error "
-                      f"{np.median(errs):7.3f} m", flush=True)
-    name = selector.replace(":", "_").replace(" ", "")
-    (OUT / f"real_bridges_{name}.json").write_text(json.dumps(rows, indent=1))
+            errs = {m: [] for m in h.METHODS}
+            for a in ANGLES:
+                T = h.rigid_transform(a, (120.0, -45.0, 3.0))
+                for m, M in h.run_all_methods(cloud(scan_pts).transform(T), bim).items():
+                    errs[m].append(h.registration_error(M, T, scan_pts)[0])
+            for m, e in errs.items():
+                rows.append(dict(source=source, bridge=scene, sensor=sensor, case=case, method=m,
+                                 success=sum(x < h.SUCCESS_M for x in e), trials=len(ANGLES),
+                                 median_err_m=float(np.median(e))))
+            print(f"{scene:18s} | {case:36s} | " + " | ".join(f"{sum(x < h.SUCCESS_M for x in e)}/4" for e in errs.values()),
+                  flush=True)
+        out.write_text(json.dumps(rows, indent=1))
 
     n = len({r["bridge"] for r in rows})
-    print(f"\n| Case | Method | Success ({n} bridges x {len(ANGLES)} rotations) |\n|---|---|---|")
+    print(f"\n| Case | " + " | ".join(h.METHODS) + f" |  ({n} bridges x {len(ANGLES)} rotations)\n|---|" + "---|" * len(h.METHODS))
     for case in dict.fromkeys(r["case"] for r in rows):
-        for method in METHODS:
-            sel = [r for r in rows if r["case"] == case and r["method"] == method]
-            print(f"| {case} | {method} | {sum(r['success'] for r in sel)}/{sum(r['trials'] for r in sel)} |")
+        print(f"| {case} | " + " | ".join(
+            f"{sum(r['success'] for r in rows if r['case'] == case and r['method'] == m)}/"
+            f"{sum(r['trials'] for r in rows if r['case'] == case and r['method'] == m)}" for m in h.METHODS) + " |")
+
+
+def hash_name(text):
+    """Stable seed per bridge (Python's hash() changes between runs), so a resumed run gives the same results."""
+    return int.from_bytes(text.encode()[:8].ljust(8, b"0"), "little") % (2**31)
 
 
 if __name__ == "__main__":

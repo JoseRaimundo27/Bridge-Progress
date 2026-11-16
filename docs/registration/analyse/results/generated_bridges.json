@@ -1,0 +1,4872 @@
+[
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 63.15983037233898
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.8502281357016901
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0021740705728671445
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0021361217194058296
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0021740705728671445
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 28.084846900928895
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.9911006069836374
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0020449912985266673
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002287098905477722
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0020449912985266673
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 1/3 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 26.850926000873812
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 1/3 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 51.83173246191416
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 1/3 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014779055194963904
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 1/3 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0019548319793503215
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 1/3 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014779055194963904
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 2/3 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 22.919269608312216
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 2/3 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 2.493335472211398
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 2/3 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001168684100112607
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 2/3 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001179235214786223
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "+ deck 2/3 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001168684100112607
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 23.465427458813238
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012055732307786485
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011261386939662157
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001871357306687396
+ },
+ {
+  "bridge": 0,
+  "spans": [
+   30.1,
+   26.8,
+   20.1
+  ],
+  "width": 11.2,
+  "height": 6.9,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011261386939662157
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.387787161358297
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.050244225629665
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 99.40703309511636
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.7102191423286403
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.7102191423286403
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 44.75460405401467
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.9903758221036595
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014137276653782452
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0013791855627203115
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014137276653782452
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 1/6 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 47.25937427601358
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 1/6 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 93.3929567271442
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 1/6 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012514230805793411
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 1/6 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0016715830565984832
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 1/6 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012514230805793411
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 2/6 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.028226723269806474
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 2/6 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 90.10818707615255
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 2/6 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009599036575748647
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 2/6 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0007729137013082183
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 2/6 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009599036575748647
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 3/6 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.02739288210761931
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 3/6 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 75.57711059563492
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 3/6 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006671200481441484
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 3/6 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.2990246457884159
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 3/6 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006671200481441484
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 4/6 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 37.60701765895373
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 4/6 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 72.16797747218783
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 4/6 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0007865734805075103
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 4/6 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 1.1492205952758172
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 4/6 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0007865734805075103
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 5/6 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 36.69175329161804
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 5/6 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 72.36076817303329
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 5/6 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0010244222581620769
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 5/6 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0013872919718322645
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "+ deck 5/6 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0010244222581620769
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 38.92297412350704
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001176192726566527
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011681645605991476
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.1264817276749677
+ },
+ {
+  "bridge": 1,
+  "spans": [
+   15.4,
+   19.7,
+   36.4,
+   16.9,
+   20.0,
+   30.8
+  ],
+  "width": 8.6,
+  "height": 6.5,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011681645605991476
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 51.32583132456317
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 97.45437465100491
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 97.76914249111704
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0038937492003752756
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0038937492003752756
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 43.8779143628396
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.9861700129079001
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001819774759031266
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015733585517560436
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001819774759031266
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 1/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 46.52140408994114
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 1/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 90.0705287239773
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 1/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0013252720460040024
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 1/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0016460800832617116
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 1/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0013252720460040024
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 2/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 41.7597731842025
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 2/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 77.0313795184454
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 2/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009083423420306498
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 2/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001323168950433893
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 2/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009083423420306498
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 3/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 73.04833537125944
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 3/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 69.32783711497711
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 3/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001502930588136532
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 3/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0012426950491967032
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 3/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001502930588136532
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 4/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 35.33099938162739
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 4/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 69.5702702583751
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 4/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.000941132649082413
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 4/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.6574528972792049
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "+ deck 4/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.000941132649082413
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 37.69988857323891
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001072930546121306
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0008466823577574346
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 1.836405658434452
+ },
+ {
+  "bridge": 2,
+  "spans": [
+   23.9,
+   33.7,
+   24.7,
+   23.4,
+   28.9
+  ],
+  "width": 9.1,
+  "height": 6.2,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0008466823577574346
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.035667485335777065
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.723013709500945
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015739346555544318
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0019311925990766919
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015739346555544318
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 29.98427068543386
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 2.5484444109400135
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001319930759951071
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014467981701232827
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001319930759951071
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 1/3 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 59.02348691019439
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 1/3 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.410800580107427
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 1/3 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014230196072473312
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 1/3 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0018513263395416638
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 1/3 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014230196072473312
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 2/3 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 25.00553012327407
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 2/3 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.670688245702786
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 2/3 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001143111084439149
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 2/3 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001094766367681683
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "+ deck 2/3 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001143111084439149
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 25.302280026230125
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011981722557197969
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014737099903077621
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001490431206505857
+ },
+ {
+  "bridge": 3,
+  "spans": [
+   21.4,
+   27.4,
+   31.5
+  ],
+  "width": 12.5,
+  "height": 12.2,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014737099903077621
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 49.50899775287358
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.520909302105674
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009704340900274435
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 5.788284130817534
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009704340900274435
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 43.35970183969687
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.128009904219081
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0019280476271427047
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0019128596722097339
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0019280476271427047
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 1/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 45.14352731129811
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 1/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 86.34617561047764
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 1/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0023422671876963896
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 1/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0025161605050724517
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 1/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0023422671876963896
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 2/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 43.86876911600824
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 2/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 81.7001825591864
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 2/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0018364823553470556
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 2/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0017221345906998906
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 2/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0018364823553470556
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 3/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 39.36644039404818
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 3/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 71.6990757100302
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 3/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0019102516315837302
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 3/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0019855709989354004
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 3/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0019102516315837302
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 4/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 35.262797820183444
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 4/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 67.5215685249639
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 4/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0017954829012360204
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 4/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0020444677538109203
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "+ deck 4/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0017954829012360204
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 37.00912103837595
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011882206031621602
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009731965394757516
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001296279583454683
+ },
+ {
+  "bridge": 4,
+  "spans": [
+   18.3,
+   18.5,
+   24.5,
+   30.5,
+   35.9
+  ],
+  "width": 8.8,
+  "height": 10.6,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009731965394757516
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 46.81764625501189
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.4977217378515106
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0038165858544733427
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.11881514266965848
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0038165858544733427
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 40.502432025468316
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.9924794964918685
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012326604213791417
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0020583745476557987
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012326604213791417
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 1/4 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 41.921613942297896
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 1/4 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.269443478077434
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 1/4 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.000707191878579906
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 1/4 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 0.8142033620478183
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 1/4 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.000707191878579906
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 2/4 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 37.319883310159994
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 2/4 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.932509270600205
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 2/4 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0018796024522726013
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 2/4 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0023028191886525313
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 2/4 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0018796024522726013
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 3/4 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 32.90848052396603
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 3/4 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 63.926480738746434
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 3/4 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0020535975167749075
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 3/4 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 1.4415269517044975
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "+ deck 3/4 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0020535975167749075
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 35.29137353607161
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0013733095424849438
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0013271702756505203
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 1.6529650790305257
+ },
+ {
+  "bridge": 5,
+  "spans": [
+   38.3,
+   22.2,
+   31.0,
+   35.9
+  ],
+  "width": 13.9,
+  "height": 6.6,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0013271702756505203
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 40.85080367896642
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 2.9294660121459692
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.000989725326263147
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0014239235985896825
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.000989725326263147
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 35.69908697508711
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.9913168568412799
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011720052027726663
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.00116321271278815
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011720052027726663
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 1/4 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 36.43358404428829
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 1/4 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.260551648030365
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 1/4 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012593831413829637
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 1/4 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012327994691111864
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 1/4 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0012593831413829637
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 2/4 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 32.26710943319235
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 2/4 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 61.326845401350454
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 2/4 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009720266472185969
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 2/4 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001100904461672519
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 2/4 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009720266472185969
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 3/4 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 29.234497424300738
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 3/4 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 57.36021516658025
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 3/4 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015293915983128092
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 3/4 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014345500888457605
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "+ deck 3/4 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015293915983128092
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 30.835613985188314
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001152744726019654
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009602946595925149
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0014783858345719094
+ },
+ {
+  "bridge": 6,
+  "spans": [
+   30.0,
+   22.4,
+   20.9,
+   35.0
+  ],
+  "width": 10.0,
+  "height": 9.1,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009602946595925149
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 29.295698914942125
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 30.713998506651645
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001860427623318742
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.003113499311369649
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001860427623318742
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 53.0923324620739
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.4973005916588105
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0029488907747178333
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002823144571994272
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0029488907747178333
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ deck 1/2 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 22.74138555171164
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ deck 1/2 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 24.439580093441993
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ deck 1/2 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014674743260450532
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ deck 1/2 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.001537578786619542
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "+ deck 1/2 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014674743260450532
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.028286066623670537
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011372827039564247
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011037226655394397
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0014066051978895734
+ },
+ {
+  "bridge": 7,
+  "spans": [
+   35.4,
+   31.1
+  ],
+  "width": 9.2,
+  "height": 10.9,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0011037226655394397
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 39.55717863581944
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.4579938120920275
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.00144444851113759
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0014762149431081363
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.00144444851113759
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 67.31676176127468
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.4842839899228735
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0008236097629406431
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0012617846302921546
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0008236097629406431
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 1/3 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 32.37472532317217
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 1/3 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 62.55170360707289
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 1/3 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0022731198303393837
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 1/3 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.003431896698628712
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 1/3 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0022731198303393837
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 2/3 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.037592939750375504
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 2/3 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 55.44481517813661
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 2/3 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015935637408568317
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 2/3 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.06720993517828536
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "+ deck 2/3 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015935637408568317
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 28.65471442272274
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0022719033354959223
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002222729328332055
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.5184530612522057
+ },
+ {
+  "bridge": 8,
+  "spans": [
+   35.3,
+   20.4,
+   39.6
+  ],
+  "width": 13.9,
+  "height": 13.4,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002222729328332055
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "foundations",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.029466849112794583
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "foundations",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 5.50655380092069
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "foundations",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002031411290568938
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "foundations",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.0022280681060624762
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "foundations",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.002031411290568938
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ piers",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 41.27892851448559
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 81.879154781666
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ piers",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0005744387029441415
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ piers",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006241843145365196
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ piers",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0005744387029441415
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 1/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 43.25194154357613
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 1/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.890688577917174
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 1/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006235146173478278
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 1/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.000773848352234941
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 1/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006235146173478278
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 2/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 41.9295828199261
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 2/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.73235037030482
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 2/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006863353841742193
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 2/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0007836194978673835
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 2/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0006863353841742193
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 3/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.025801620693422598
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 3/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.541328740239322
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 3/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0005762727807796834
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 3/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009869627197963253
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 3/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0005762727807796834
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 4/5 spans",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 34.28384705631937
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 4/5 spans",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 66.6537819818593
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 4/5 spans",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0007419602241718454
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 4/5 spans",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.7214606673136703
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "+ deck 4/5 spans",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0007419602241718454
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "complete",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 36.28369816343288
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "complete",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0010359668568903774
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "complete",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009570014704340722
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "complete",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.5530334940046381
+ },
+ {
+  "bridge": 9,
+  "spans": [
+   23.2,
+   16.2,
+   22.0,
+   35.6,
+   30.2
+  ],
+  "width": 11.4,
+  "height": 10.0,
+  "stage": "complete",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0009570014704340722
+ }
+]

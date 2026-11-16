@@ -238,3 +238,29 @@ def fpfh_ransac(scan_raw, bim_raw, voxel=0.5, refine=(1.0, 0.3, 0.1)):
     fine = multiscale_icp(scan_raw.voxel_down_sample(0.1), bim_raw.voxel_down_sample(0.1), refine,
                           init=r.transformation)
     return fine.transformation
+
+
+# ---------------------------------------------------------------- all methods on one scan
+
+WIDE_THRESHOLDS = (20.0, 5.0, 1.0, 0.3, 0.1)  # the wide first step lets ICP slide a partial scan along the bridge
+METHODS = ("legacy (thr 20 m)", "prototype (ICP from 1 m)", "prototype (ICP from 20 m)", "FPFH+RANSAC+ICP",
+           "combined (best of last 2)")
+
+
+def fitness(scan, bim, M, thr=0.2):
+    """Share of the scan points closer than thr to the as-planned cloud after applying M."""
+    d = np.asarray(copy.deepcopy(scan).transform(M).compute_point_cloud_distance(bim))
+    return float((d < thr).mean())
+
+
+def run_all_methods(scan, bim):
+    """Transforms of every method. "combined" reuses the two previous results, so it is directly comparable."""
+    wide = obbp_v1(scan, bim, thresholds=WIDE_THRESHOLDS)[0]["M"]
+    fpfh = fpfh_ransac(scan, bim)
+    return dict(zip(METHODS, (
+        legacy.obbp_icp_corrigido(scan, bim, voxel_size=0.2, icp_dist_thresh=20.0)[2],
+        obbp_v1(scan, bim)[0]["M"],
+        wide,
+        fpfh,
+        wide if fitness(scan, bim, wide) >= fitness(scan, bim, fpfh) else fpfh,
+    )))

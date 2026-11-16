@@ -65,6 +65,8 @@ Team dataset for segmentation: [Gabl26/bridge-pointclouds](https://huggingface.c
 cd "ModuleTwo RandlaNET/Python" && ../../.venv/bin/python prepare_splits.py   # symlinks in DATASET/Ponte_Custom3D/{train,val,test}
 ```
 
+The team also has a private, larger version: `GETEC-UFBA/bridge-pointclouds` (more bridges, IGN tiles, RefSite3D). Download it to `ModuleTwo RandlaNET/DATASET/bridge-pointclouds-getec/`: `prepare_splits.py` uses it first when it exists, and `--sources` selects the sources.
+
 `ModuleTwo RandlaNET/Python/txt_ply.py` converts a `x y z r g b label` text file (for example a CloudCompare export) to this PLY format.
 
 The input file names are set at the top of each script. Paths are relative to the script's module folder, so the scripts work from any directory and on any machine.

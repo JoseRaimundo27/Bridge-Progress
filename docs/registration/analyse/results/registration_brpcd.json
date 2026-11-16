@@ -1,0 +1,1402 @@
+[
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.019729886524220048
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.64159274409147
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0014354984891532668
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 152.21218101460641
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0015748051626036897
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 204.06906870556645
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 163.34945787515446
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 115.87326129952132
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 43.34391634931423
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 58.84758088900446
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.015489274721225375
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.009052021423917624
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.009466445677161752
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 2.7428956183421183
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.009466445677161752
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 49.008810165786755
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 38.838408089576944
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 48.997228371881405
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 48.99669878304355
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 48.99671349476418
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 180.3888785606425
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 360.7910580904389
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.019340078681359826
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 286.5829347323697
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.019340078681359826
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 204.7976403215566
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 199.94525095891456
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 175.92540341274974
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 199.49469440808554
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 175.92540341274974
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.025071098445557147
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026331426695343448
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026419089405729
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 50.994788319541065
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02809081340776669
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 79.51017564225356
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 79.1926246993952
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 72.63116551526396
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 56.10625604467792
+ },
+ {
+  "source": "brpcd",
+  "bridge": "cs-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 72.63116551526396
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.014451052803089658
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.425341210886448
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.039070068366447205
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 40.05734122131696
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.039070068366447205
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 162.36830959340222
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 182.5620087690458
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 178.02933029979894
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03626162590098938
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03626162590098938
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.024257643570962783
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 121.64056139489888
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.061121629222628815
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 143.0709824350741
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.061121629222628815
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 88.0588609537645
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 32.20312128383733
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06187788470545311
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 129.81159752629145
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06187788470545311
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 402.58195229195667
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04659649752914638
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04645696429356737
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 582.0044604206237
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04645696429356737
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 398.9767951879404
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 477.40427397659687
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 477.42204841043025
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 404.5404628787903
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge1_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 639.9274449632073
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 2.2136098149186196
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 22.38129871675907
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06527723015454492
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 688.4380802448361
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06527723015454492
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 606.4159466902238
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 499.0845621415406
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 501.13530346791026
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 663.7866431162116
+ },
+ {
+  "source": "brpcd",
+  "bridge": "sus-f-bridge2_com",
+  "sensor": "virtual",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 501.13530346791026
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 65.5010122967482
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.78457871402377
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.015980469035942024
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.016603252911457513
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.017927394622772486
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 103.56233600386912
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 65.0224957235109
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 71.90546595472686
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.021885384471121434
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.021885384471121434
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 24.5218722340147
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04202192553230309
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04202425078682745
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.054235732269534
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.06564453451017971
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 28.071685258392392
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 24.93631729166801
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 24.92406189782436
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.18039657361010059
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge2",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.18039657361010059
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 15.060313424536032
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.032154778845935705
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03214233155788194
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 30.07759006617738
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03214233155788194
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.025555386635563
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.329765248612233
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.32977117881847
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 15.053142052633287
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge3",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 15.053142052633287
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 17.164547479371258
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.13463623882567333
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.13463626995097075
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.056169821524047134
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.056169821524047134
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 20.421396950943986
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.834147207074643
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.289807240220743
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04182425467646453
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge4",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04182425467646453
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 15.365908377803336
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.041356501741562905
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.041289950828178025
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.030152984409444472
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.041289950828178025
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.931361562089062
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.44075589854967
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.443934239096592
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08861083476601835
+ },
+ {
+  "source": "brpcd",
+  "bridge": "c-bridge5",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08861083476601835
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 10.067500989237084
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03647798716930902
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.036520348225637496
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.07985286968619909
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.036520348225637496
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.955565223019246
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.43475786619755
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.434742222888033
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 8.733751838401464
+ },
+ {
+  "source": "brpcd",
+  "bridge": "s-bridge1",
+  "sensor": "TLS",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 6.926376792417453
+ }
+]

@@ -1,6 +1,6 @@
 # Module II.2 (registration) — Initial analysis and tests
 
-**Date:** Thursday, October 8, 2026 · **Branch:** `bridge-segmentation` (commit `84168a3`) · **Author:** Oscar (with Claude Code)
+**Date:** Thursday, October 8, 2026 · **Branch:** `bridge-segmentation` (commit `84168a3`) · **Author:** Oscar (with Claude Code) · **Updated:** November 5, 2026 (real, IFC and RefSite3D tests)
 
 This document checks the state of Module II.2 **before** we start the tasks of the plan (T0.1 to T4.1). It answers three questions:
 1. Do the current code and installation work?
@@ -22,7 +22,10 @@ This document checks the state of Module II.2 **before** we start the tasks of t
 | 9 | **Point-to-plane ICP: same accuracy, 2× faster** than point-to-point. | 🟢 | T1.6 |
 | 10 | The current script prints "Alinhamento concluído!" **even when the result is flipped**, and its Open3D windows **block forever** without a screen. | 🟠 | T0.1, T2.1 |
 | 11 | **With a realistic RandLA-Net segmentation (22 % clutter left), OBBP-ICP fails 4/4.** FPFH + RANSAC after outlier removal succeeds 4/4. | 🔴 | T3.3, T3.4 |
-| 12 | **Confirmed on 14 real bridges (drone, TLS, MLS):** prototype 53/56 on complete bridges (old code 20/56); partial bridges 0/56 with OBBP-ICP, 48/56 with FPFH + RANSAC. On drone bridges, the prototype alone fails 3/24. | 🔴 | T1.5, T3.4 |
+| 12 | **Confirmed on 33 real bridges (drone, TLS, MLS):** prototype 130/132 on complete bridges (old code 69/132); bridge cut at 50 %: 4/132 with ICP, 96/132 with FPFH + RANSAC. | 🔴 | T1.5, T3.4 |
+| 13 | **The first ICP threshold is the key setting.** On 10 generated IFC bridges through all construction stages: 40/240 from 1 m, **232/240 from 20 m**. On complete real bridges: 114/132 from 1 m, 130/132 from 20 m. | 🔴 | T1.5 |
+| 14 | **Best method so far: run prototype 20 m and FPFH + RANSAC, keep the best fitness.** Generated bridges 237/240; real bridges: complete 131/132, cut at 50 % 100/132, raw scans 54/92 (35/92 at best for one method alone). | 🔴 | T1.5, T3.4 |
+| 15 | **On real construction scans (RefSite3D), registration works when most of the building is present** (12/12, 3–4 cm), but not on early stages (PM1: 7/12), small isolated elements (PM4: 0/4) or raw scenes (2/28). | 🟠 | T1.8, T3.3 |
 
 ## 1. Method
 
@@ -109,54 +112,107 @@ A first run with only 3 epochs predicted "not bridge" everywhere (mIoU 0.24): tr
 
 ⚠️ These are simple synthetic scenes and a very short training. They do not predict RandLA-Net's real performance on D19; they only show **how sensitive registration is to segmentation errors**.
 
-### Real bridges (team dataset, added October 20 and 27)
+### Real bridges (team datasets, updated November 5)
 
-**Data:** 14 real bridges from the team dataset [Gabl26/bridge-pointclouds](https://huggingface.co/datasets/Gabl26/bridge-pointclouds), 3 sensor types:
-- **UAV LiDAR** (drone, DJI Zenmuse L1): the 6 bridges. This is the closest to our project;
-- **TLS** (terrestrial laser): the 5 SemanticBridge test bridges;
-- **MLS** (mobile laser, Leica BLK2GO): the 3 SemanticBridge test bridges.
+**Data:** real bridges from the team datasets ([Gabl26/bridge-pointclouds](https://huggingface.co/datasets/Gabl26/bridge-pointclouds) and the private `GETEC-UFBA/bridge-pointclouds`):
+- **UAV LiDAR** (drone, DJI Zenmuse L1): 6 bridges. This is the closest to our project;
+- **Japan** (`rc_bridges_japan`, Matterport Pro3): 9 bridges;
+- **SemanticBridge** test split: 5 TLS and 3 MLS bridges;
+- **BrPCD**: 10 real TLS bridges, many of them large cable-stayed or suspension bridges (up to 650 m). Bridge points only, so no raw-scan case. Its 4 virtual bridges are reported apart and not counted.
 
 **Setup:** there is no BIM for these bridges. The "as-planned" cloud is a random half of the bridge points (label 1); the scan is the other half (+ 1 cm noise), so the two clouds share no point. The scan is moved by a known transform, at 4 rotations (0°, 90°, 180°, 270°). Success = mean error < 20 cm.
 
-| Scan given to registration | Sensor | Old code (20 m) | OBBP-ICP prototype | FPFH + RANSAC + ICP |
-|---|---|---|---|---|
-| bridge only (perfect segmentation) | UAV | 5/24 | 21/24 | 21/24 |
-| | TLS | 10/20 | 20/20 | 19/20 |
-| | MLS | 5/12 | 12/12 | 10/12 |
-| | **all** | **20/56** | **53/56** | **50/56** |
-| partial bridge (50 % built) | UAV | 0/24 | 0/24 | 19/24 |
-| | TLS | 0/20 | 0/20 | 18/20 |
-| | MLS | 0/12 | 0/12 | 11/12 |
-| | **all** | **0/56** | **0/56** | **48/56** |
-| raw scan (ground + vegetation) | UAV | 0/24 | 0/24 | 13/24 |
-| | TLS | 0/20 | 8/20 | 5/20 |
-| | MLS | 0/12 | 0/12 | 3/12 |
-| | **all** | **0/56** | **8/56** | **21/56** |
+**Methods compared** (same in all the tests below):
+- **old code:** `legacy/obbp_icp_v0.py`, 20 m threshold;
+- **prototype 1 m:** the planned fixes, ICP thresholds 1 / 0.3 / 0.1 m;
+- **prototype 20 m:** the same, ICP thresholds 20 / 5 / 1 / 0.3 / 0.1 m;
+- **FPFH:** FPFH + RANSAC + ICP;
+- **combined:** runs prototype 20 m and FPFH, and keeps the result with the best fitness on the as-planned cloud (share of scan points closer than 0.2 m).
+
+| Scan given to registration | Source | Old code | Prototype 1 m | Prototype 20 m | FPFH | Combined |
+|---|---|---|---|---|---|---|
+| bridge only (perfect segmentation) | UAV | 7/24 | 22/24 | 22/24 | 19/24 | 23/24 |
+| | Japan | 18/36 | 36/36 | 36/36 | 29/36 | 36/36 |
+| | SemanticBridge | 16/32 | 32/32 | 32/32 | 30/32 | 32/32 |
+| | BrPCD | 28/40 | 24/40 | 40/40 | 24/40 | 40/40 |
+| | **all (33 bridges)** | **69/132** | **114/132** | **130/132** | **102/132** | **131/132** |
+| partial bridge (50 % built) | UAV | 0/24 | 0/24 | 0/24 | 19/24 | 19/24 |
+| | Japan | 0/36 | 0/36 | 0/36 | 25/36 | 25/36 |
+| | SemanticBridge | 0/32 | 0/32 | 0/32 | 29/32 | 29/32 |
+| | BrPCD | 0/40 | 0/40 | 4/40 | 23/40 | 27/40 |
+| | **all (33 bridges)** | **0/132** | **0/132** | **4/132** | **96/132** | **100/132** |
+| raw scan (ground + vegetation) | UAV | 0/24 | 0/24 | 5/24 | 13/24 | 17/24 |
+| | Japan | 0/36 | 16/36 | 16/36 | 15/36 | 22/36 |
+| | SemanticBridge | 0/32 | 8/32 | 12/32 | 7/32 | 15/32 |
+| | **all (23 bridges)** | **0/92** | **24/92** | **33/92** | **35/92** | **54/92** |
 
 **Conclusions:**
-- **The synthetic results hold on 14 real bridges.** The old code fails 2 times out of 3 (flipped results). The planned Phase 1 fixes reach 53/56 on complete bridges.
-- **Drone bridges are harder:** the prototype fails 3 times out of 24 even on a complete bridge (Banwol, Ssanghak). OBBP-ICP alone is not enough; FPFH + RANSAC should be kept as a second method, and the best result chosen.
-- **Partial bridge:** OBBP-ICP fails every time (0/56); **FPFH + RANSAC succeeds 48/56**. T3.4 strategy (c) is required.
-- **Raw scans:** no method is reliable (21/56 at best). Segmentation before registration is required, as in the paper.
-- The TLS rows were computed on October 20 from the original SemanticBridge files (same scans; unlabeled points counted as clutter).
+- **The synthetic results hold on real bridges.** The old code fails about half of the time on complete bridges. The prototype from 20 m reaches 130/132.
+- **The wide threshold also helps complete bridges.** On the large BrPCD bridges, the prototype goes from 24/40 (from 1 m) to 40/40 (from 20 m).
+- **The combined method is the best or tied in every row.** On raw scans it beats each method alone (54/92), because the two methods fail on different scans. It is still not reliable enough: segmentation before registration remains required.
+- **A bridge cut at 50 % needs FPFH:** ICP almost never succeeds, even from 20 m (4/132), because the continuous deck gives it no reason to slide along the bridge. The combined method gets 100/132. BrPCD is the hardest source (27/40).
+- **The 4 virtual BrPCD bridges** (combined method): complete 16/16, cut at 50 % 1/16. FPFH alone only reaches 1/16 on complete bridges, so its results on these clouds need a closer look before any conclusion.
+- These numbers replace those of October 27 (14 bridges). Raw scans cover 23 bridges only, because BrPCD has none. The tests were re-run with a fixed seed per bridge, so some rows differ slightly (for example UAV, prototype: 22/24 instead of 21/24).
 
-### Scan vs BIM from a real IFC bridge model (added October 27)
+### Scan vs BIM from a real IFC bridge model (updated November 4)
 
 **Data:** the buildingSMART sample [`Infra-Bridge.ifc`](https://github.com/buildingSMART/Sample-Test-Files) (IFC4X3_ADD2: 3 bridges, 44 elements). **Module I runs on it without change:** 44/44 elements converted, 110,000-point as-planned cloud in 7 s. The model has no 4D schedule.
 
 **Setup:** the as-planned cloud is the Module I output for the full model. The scan is an independent sampling of the elements already built at a construction stage (+ 1 cm noise), moved by a known transform (4 rotations).
 
-| Construction stage (scan) | Old code (20 m) | OBBP-ICP prototype | FPFH + RANSAC + ICP |
-|---|---|---|---|
-| foundations only (footings, walls, fill) | 0/4 | **4/4** | 3/4 |
-| foundations + piers | 0/4 | **4/4** | 2/4 |
-| complete bridge | 4/4 | 4/4 | 4/4 |
+| Construction stage (scan) | Old code | Prototype 1 m | Prototype 20 m | FPFH | Combined |
+|---|---|---|---|---|---|
+| foundations only (footings, walls, fill) | 0/4 | 4/4 | 4/4 | 2/4 | 4/4 |
+| foundations + piers | 0/4 | 4/4 | 4/4 | 1/4 | 4/4 |
+| complete bridge | 4/4 | 4/4 | 4/4 | 4/4 | 4/4 |
 
 **Conclusions:**
 - **First end-to-end test Module I → Module II.2 on a real IFC bridge:** it works.
-- **"Partial" is not always hard:** when the built elements are spread along the whole bridge (all foundations first), the centre and the axis of the scan stay close to the BIM, and OBBP-ICP succeeds. It fails when one part of the bridge is missing (one span built, the next not; see the tests above).
-- **No method wins every case:** FPFH + RANSAC is weaker here (simple, regular shapes). The final algorithm should run both and keep the best result.
+- **"Partial" is not always hard:** when the built elements are spread along the whole bridge, the centre and the axis of the scan stay close to the BIM.
+- FPFH is weaker here (simple, regular shapes); the combined method still gets 12/12.
 - One model only: to repeat on the project IFC (RSP-116RJ) when available.
+
+### Generated IFC bridges through construction stages (added November 4)
+
+**Why:** no public dataset pairs a bridge under construction with its BIM. `generated_bridges.py` therefore builds them.
+
+**Data:** 10 random IFC 4.3 girder bridges (2 to 6 unequal spans of 15–40 m, piers 5–15 m, deck 8–14 m wide). The as-planned cloud is the Module I output for the full bridge. The scans are an independent sampling of the elements built at each stage (+ 1 cm noise): foundations, then piers, then the deck span by span. 60 stages in total, 4 rotations each.
+
+| Construction stage (scan) | Old code | Prototype 1 m | Prototype 20 m | FPFH | Combined |
+|---|---|---|---|---|---|
+| foundations | 17/40 | 0/40 | 32/40 | 28/40 | **37/40** |
+| + piers | 18/40 | 0/40 | 40/40 | 37/40 | **40/40** |
+| deck partly built | 62/120 | 0/120 | 120/120 | 97/120 | **120/120** |
+| complete bridge | 21/40 | 40/40 | 40/40 | 26/40 | **40/40** |
+| **all** | **118/240** | **40/240** | **232/240** | **188/240** | **237/240** |
+
+**Conclusions:**
+- **The first ICP threshold is the key setting.** On a partly built bridge, the centres of the scan and the BIM are tens of metres apart. From 1 m, ICP finds no neighbours and stops (40/240). From 20 m, it slides into place (232/240). It also improves complete real bridges (114/132 → 130/132).
+- **The combined method fails only 3 times out of 240,** all at the foundations stage.
+- ⚠️ These scans are ideal: no occlusion, no clutter. All the piers are built before the deck, which locks the alignment. A bridge built span by span, with later piers missing, is closer to the "cut at 50 %" case above, where ICP fails and FPFH is needed.
+
+### Real construction scans with their planned model: RefSite3D (added November 4)
+
+**Data:** [RefSite3D](https://doi.org/10.5281/zenodo.20285732) (RWTH Aachen, CC-BY 4.0, in the private team dataset): a modular building in 5 progress states (PM1 to PM5), with planned models and real scans (laser scanners, photogrammetry, NeRF) in one common frame. So the true transform is known. **It is not a bridge, but it is the only real Scan-vs-BIM test we have.**
+
+**Setup:** the as-planned cloud is the synthetic cloud of the full planned model of the phase. The scan is moved by a known transform (4 rotations).
+
+| Scan | State (scans) | Old code | Prototype 1 m | Prototype 20 m | FPFH | Combined |
+|---|---|---|---|---|---|---|
+| building extracted | PM1 (NeRF, photogrammetry, laser) | 0/12 | 0/12 | 0/12 | 7/12 | 7/12 |
+| | PM2 (laser) | 3/4 | 4/4 | 4/4 | 4/4 | 4/4 |
+| | PM3 (laser) | 3/4 | 4/4 | 4/4 | 4/4 | 4/4 |
+| | PM4 (laser) | 1/4 | 0/4 | 0/4 | 0/4 | 0/4 |
+| | PM5 (laser) | 1/4 | 4/4 | 4/4 | 4/4 | 4/4 |
+| | **all** | **8/28** | **12/28** | **12/28** | **19/28** | **19/28** |
+| full scene (raw) | **all** | **0/28** | **0/28** | **0/28** | **2/28** | **2/28** |
+
+**Conclusions:**
+- **On the states where most of the building is present (PM2, PM3, PM5), registration works:** 12/12 with a median error of 3–4 cm.
+- **PM1 (early stage) is the hard case:** the scan is 3 m high and the model 8 m. FPFH gets 7/12; the prototype never succeeds.
+- **PM4 fails with every recent method, and the data is not the cause:** at its true position the scan is 1.3 cm from the model (median). It covers one thin element (4.9 × 1.4 m, 5 m high, for a 7.4 m model), and the 2.4 m median error matches this height difference. So a small, isolated element is a limit of the method.
+- **Raw scenes fail (2/28):** segmentation is required, as on the bridges. Registration quality will depend on RandLA-Net.
+- The metadata of `scene_006` names "faro" files, but the files are named "leica". To report to the authors.
 
 ## 5. Impact on the task plan
 
@@ -168,7 +224,7 @@ A first run with only 3 epochs predicted "not bridge" everywhere (mIoU 0.24): tr
 | T1.2 | 🟡 lower priority | No precision loss inside Open3D. Keep it: cheap, and protects against float32 files |
 | T1.3 | ✅ confirmed | Add a "tall pier" test |
 | T1.4 | 🟡 depends on T0.3 | Not needed under ~10° tilt. Level **after** segmentation, otherwise the dominant plane is the ground |
-| T1.5 | ✅ confirmed, high priority | Root cause found (fitness tie). Compute the thresholds from the voxel |
+| T1.5 | ✅ confirmed, high priority | Root cause found (fitness tie). **Change the default `icp_thresholds` from `[1.0, 0.3, 0.1]` to `[20.0, 5.0, 1.0, 0.3, 0.1]`** (40/240 → 232/240 on generated bridges, 114/132 → 130/132 on complete real bridges). The fine steps can follow the voxel; the 20 m step must not, because it depends on the size of the missing part |
 | T1.6 | ✅ | Point-to-plane is a good default (2× faster), to confirm on D19 |
 | T1.7 | 🟡 depends on T0.3 | A 2 % scale error is enough to break results: check the scale carefully |
 | T2.1 | ✅ | `--viz` off by default is **required** (blocks without a screen). Check empty or missing files |
@@ -178,9 +234,10 @@ A first run with only 3 epochs predicted "not bridge" everywhere (mIoU 0.24): tr
 | T3.2 | ✅ | Define success by **comparing with the known transform**, not by `D_avg` |
 | T3.3 | ✅ | Also show that `D_avg` is meaningless on a raw scan. Report segmentation quality (mIoU, clutter left) with each result; test FPFH + RANSAC on the RandLA-Net output |
 | Module II.1 | ✅ | Add `logging.basicConfig(level=logging.INFO)` to `train_ponte.py` to see loss and mIoU during training |
-| T3.4 | 🔴 **move earlier** | This is the normal case during construction: 0/12 with OBBP-ICP, 10/12 with FPFH + RANSAC. The same method also handles the clutter left by RandLA-Net. Start strategy (c) in Phase 1 |
+| T3.4 | 🔴 **move earlier** | This is the normal case during construction. Bridge cut at 50 %: 4/132 with ICP, 96/132 with FPFH + RANSAC, 100/132 combined. Implement the combined method: run both, keep the best fitness. The same method also handles the clutter left by RandLA-Net. Start in Phase 1 |
 | Module I | 🔴 prerequisite | Merge the uniform-density fix (`geometriaEnuvem.py`) and regenerate the as-planned clouds |
-| **New task** | — | **Automatic failure check**: warn when the result is doubtful (low fitness at the finest threshold, small gap between candidates, high median distance) |
+| **New task** | — | **Automatic failure check**: warn when the result is doubtful (low fitness at the finest threshold, small gap between candidates, high median distance). RefSite3D shows the cases to catch: early stages and small isolated elements |
+| Module III | to plan | RefSite3D provides object verification labels on real scans: a possible test set for element status |
 
 ## 6. Reproduce
 
@@ -191,9 +248,13 @@ cd docs/registration/analyse
 ../../../.venv/bin/python experiments.py          # E1 to E12 (about 10 min on CPU)
 ../../../.venv/bin/python randlanet_test.py 12    # RandLA-Net, 12 epochs (about 30 min on CPU)
 ../../../.venv/bin/python randla_followup.py      # cleaning of the RandLA-Net output (after randlanet_test.py)
-../../../.venv/bin/python real_bridges.py uav_lidar                    # 6 drone bridges (team dataset, ~40 min on CPU)
-../../../.venv/bin/python real_bridges.py semanticbridge:test          # SemanticBridge test bridges (TLS + MLS)
-../../../.venv/bin/python ifc_bridge.py                                # scan vs BIM from the buildingSMART IFC bridge (~1 min)
+../../../.venv/bin/python real_bridges.py uav_lidar                    # 6 drone bridges (~4 h on CPU)
+../../../.venv/bin/python real_bridges.py rc_bridges_japan             # 9 bridges from Japan (~1.5 h)
+../../../.venv/bin/python real_bridges.py semanticbridge:test          # 8 SemanticBridge test bridges (~5 h)
+../../../.venv/bin/python real_bridges.py brpcd                        # 14 BrPCD bridges (~11 h, private dataset)
+../../../.venv/bin/python ifc_bridge.py                                # scan vs BIM from the buildingSMART IFC bridge
+../../../.venv/bin/python generated_bridges.py 10                      # 10 generated IFC bridges (a few hours)
+../../../.venv/bin/python refsite3d_test.py                            # RefSite3D (~3 h, private dataset)
 ```
 
-Raw results are saved in `analyse/results/*.json`.
+Raw results are saved in `analyse/results/*.json`. The long tests save after each bridge or scene: run the same command again to resume.

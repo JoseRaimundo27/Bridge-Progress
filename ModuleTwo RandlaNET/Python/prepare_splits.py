@@ -18,16 +18,20 @@ Uso:
 import argparse
 import csv
 import shutil
+from pathlib import Path
 
 from dataset_ponte import PASTA_DATASET, PASTA_PONTE_CUSTOM3D
 
-ORIGEM = PASTA_DATASET / "bridge-pointclouds"
+ORIGENS = (PASTA_DATASET / "bridge-pointclouds-getec",  # versão privada da equipe (GETEC-UFBA), mais fontes
+           PASTA_DATASET / "bridge-pointclouds")        # versão pública (Gabl26)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--sources", nargs="+", default=["uav_lidar", "semanticbridge"])
     parser.add_argument("--allow-no-rgb", action="store_true", help="incluir cenas sem cor")
+    parser.add_argument("--root", type=Path, default=next((o for o in ORIGENS if o.exists()), ORIGENS[-1]),
+                        help="pasta do dataset baixado")
     args = parser.parse_args()
 
     if PASTA_PONTE_CUSTOM3D.exists():
@@ -37,7 +41,8 @@ def main():
 
     contagem = {}
     for fonte in args.sources:
-        lista = ORIGEM / fonte / "scenes.csv"
+        pasta = args.root / fonte / "processed" if (args.root / fonte / "processed").exists() else args.root / fonte
+        lista = pasta / "scenes.csv"
         if not lista.exists():
             raise SystemExit(f"{lista} não encontrado: baixe o dataset (ver docstring).")
         with open(lista, newline="") as f:
@@ -46,7 +51,7 @@ def main():
                     continue
                 destino = PASTA_PONTE_CUSTOM3D / cena["split"] / cena["file"]
                 destino.parent.mkdir(parents=True, exist_ok=True)
-                destino.symlink_to(ORIGEM / fonte / cena["file"])
+                destino.symlink_to(pasta / cena["file"])
                 contagem[cena["split"]] = contagem.get(cena["split"], 0) + 1
 
     print(f"{PASTA_PONTE_CUSTOM3D}: " + ", ".join(f"{s} {n}" for s, n in sorted(contagem.items())))

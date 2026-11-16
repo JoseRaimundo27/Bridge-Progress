@@ -36,7 +36,6 @@ STAGES = {
     "foundations + piers": {"IfcFooting", "IfcWall", "IfcEarthworksFill", "IfcColumn"},
     "complete bridge": None,
 }
-METHODS = ("legacy (thr 20 m)", "prototype v1", "FPFH+RANSAC+ICP")
 ANGLES = (0, 90, 180, 270)
 
 
@@ -77,23 +76,16 @@ def main():
     rows = []
     for stage, classes in STAGES.items():
         pts = scan_of(meshes, classes, rng)
-        for method in METHODS:
-            errs = []
-            for a in ANGLES:
-                T = h.rigid_transform(a, (120.0, -45.0, 3.0))
-                scan = o3d.geometry.PointCloud(o3d.utility.Vector3dVector(pts)).transform(T)
-                if method == METHODS[0]:
-                    M = h.legacy.obbp_icp_corrigido(scan, bim, voxel_size=0.2, icp_dist_thresh=20.0)[2]
-                elif method == METHODS[1]:
-                    M = h.obbp_v1(scan, bim)[0]["M"]
-                else:
-                    M = h.fpfh_ransac(scan, bim)
-                errs.append(h.registration_error(M, T, pts)[0])
-            ok = sum(e < h.SUCCESS_M for e in errs)
-            rows.append(dict(stage=stage, scan_points=len(pts), method=method, success=ok, trials=len(ANGLES),
-                             median_err_m=float(np.median(errs))))
-            print(f"{stage:20s} | {len(pts):7d} pts | {method:18s} | {ok}/{len(ANGLES)} | median error {np.median(errs):7.3f} m",
-                  flush=True)
+        errs = {m: [] for m in h.METHODS}
+        for a in ANGLES:
+            T = h.rigid_transform(a, (120.0, -45.0, 3.0))
+            scan = o3d.geometry.PointCloud(o3d.utility.Vector3dVector(pts)).transform(T)
+            for m, M in h.run_all_methods(scan, bim).items():
+                errs[m].append(h.registration_error(M, T, pts)[0])
+        for m, e in errs.items():
+            rows.append(dict(stage=stage, scan_points=len(pts), method=m, success=sum(x < h.SUCCESS_M for x in e),
+                             trials=len(ANGLES), median_err_m=float(np.median(e))))
+        print(f"{stage:20s} | {len(pts):7d} pts | " + " | ".join(f"{sum(x < h.SUCCESS_M for x in e)}/4" for e in errs.values()), flush=True)
     (OUT / "ifc_bridge.json").write_text(json.dumps(rows, indent=1))
 
 

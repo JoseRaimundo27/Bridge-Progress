@@ -1,0 +1,1202 @@
+[
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 8.814258720923888
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.11067418089804847
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.11071080288503962
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.10747797359107207
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08140307376040837
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.853812023642096
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.804744065207835
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.804744065207828
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.09048009604274433
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.09048009604274433
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.91962097902251
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 27.596005602615342
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 27.399426374308582
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 27.79485264447229
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 27.399426374308582
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 14.935683283435703
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.008249686832970893
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.008372608926661328
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.008432607395848711
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.008372608926661328
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.960765387576096
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.729768006035686
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 11.655135448216827
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.016150024067984353
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.016150024067984353
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 45.2593567652565
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 45.43666078627547
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.009307437750678604
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 28.775211744591147
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.009307437750678604
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.654418216429077
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.014659864363032519
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.014658840194210512
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.014672887415821456
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.014658840194210512
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.246497015489858
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.030771458979512
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.506762326241734
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.017749214925101883
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.017749214925101883
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.56848074085098
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 42.389534411520934
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.4959366881107217
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.624601138762488
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_blk",
+  "sensor": "Leica BLK2GO (MLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 1.748615567426958
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 8.198481087530523
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.011488855477008252
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.011421771943039562
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.13403388604148145
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.011421771943039562
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.866536324912884
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.783030905026757
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.783030905026754
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 7.319968188960815
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 7.319968188960815
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.6809486372449
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 25.541490968630583
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.022714952849917
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 26.29269718291488
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_13_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.022714952849917
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.06343796088587
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026610333245743033
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026507101229649964
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026506019251815675
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.026507101229649964
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.376079501827288
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 9.831141457312281
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 9.259402398101617
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.038189611726878736
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.038189611726878736
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.64457063241082
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 2.086631400021555
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 1.582963003170097
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 13.257159191690224
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_17_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 1.5515490355604018
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.068453648360974
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.016698463147625516
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01665611200763479
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01657038309322008
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01665611200763479
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.284280326958466
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.915962862175304
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.550830288456359
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0147150297168176
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0147150297168176
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.377122903893056
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.74013914572796
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.778302881065759
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 39.75594966216736
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_19_fr_rtc",
+  "sensor": "Leica RTC360 (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.778302881065759
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 16.481346218554986
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02731680206242025
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.027283688908359374
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.0329639919680341
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03298162705138003
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 18.79147525922288
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.602415209565041
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.60515369071555
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04500338134655275
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04500338134655275
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 21.22568135700716
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03780599701855325
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.033612631754935736
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 20.682338123603653
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_1_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.03318846155244867
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 13.064650414273727
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022637487908674144
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022881663590736012
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02326827798590703
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022881663590736012
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.251183197104858
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 12.670015224576161
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 9.15583780368744
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02488368652890999
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.02488368652890999
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.93645067620891
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.011473621215278553
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01147362121526874
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 15.556935397437098
+ },
+ {
+  "source": "semanticbridge",
+  "bridge": "bridge_7_cb_faro",
+  "sensor": "FARO (TLS)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01147362121526874
+ }
+]

@@ -1,0 +1,902 @@
+[
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 15.132667465694423
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08889368543233386
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08889268143640888
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08850301490388834
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08850360614278152
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.620344755760637
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.989482560733205
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.989461759729817
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.09190857250457835
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.09190857250457835
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 20.722392572682676
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 39.05556408694471
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 4.630240965055428
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01716688990064743
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Palgok",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.01716688990064743
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 11.593984499079605
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.14270235042852736
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.14270185178649086
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022505362857240266
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.022505362857240266
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 13.91640763971759
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.055886057401235
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 9.851605316692556
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.060919367942841515
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.060919367942841515
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.555457386693556
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 3.8884089676436915
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 26.94285137329541
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 1.0243679518962165
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Seokdap",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 1.0243679518962165
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.5144461500040278
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.177179720259523
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1771857377282129
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 10.596208252883423
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.15629243491341366
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 12.310263072536722
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.472670079206793
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.47267000124227
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 10.336136073795455
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 10.336136073795455
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.413121179144317
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.21592469158400238
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 0.2111744242726044
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 13.389472226843717
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Banwol",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 0.16639261869903962
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 2,
+  "trials": 4,
+  "median_err_m": 17.45639299326809
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04821516357487432
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04820484981010278
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.14975654611152076
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.038026675784557845
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 20.97433330321369
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.252295872953397
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 17.45247288621494
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1374335033148576
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1374335033148576
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 21.995698942501704
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 41.33881660278698
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 23.34555917335356
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08146497783794847
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ipbuk",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.08146497783794847
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 6.847323027521399
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.13397551074918246
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.1339756883032645
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.09087783919680904
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.07649763256480568
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 8.27190340262532
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.262090928113692
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 7.4620283506007095
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.10153889126935833
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.10153889126935833
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.822244139733899
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 19.19049261618931
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 10.625430185048728
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 5.143070347919779
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Ssanghak",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 5.143070347919779
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "legacy (thr 20 m)",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.19680968414169395
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.053031874242304905
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.053068574190590814
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 3,
+  "trials": 4,
+  "median_err_m": 0.06374839812094571
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "bridge only (perfect segmentation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.053068574190590814
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 14.494593282330369
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 12.26146175715192
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 12.061447135202926
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04409285473185308
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "partial bridge (50 %)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.04409285473185308
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "legacy (thr 20 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 16.712523478197074
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 1 m)",
+  "success": 0,
+  "trials": 4,
+  "median_err_m": 0.598373673373388
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "prototype (ICP from 20 m)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.008809601025733253
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "FPFH+RANSAC+ICP",
+  "success": 1,
+  "trials": 4,
+  "median_err_m": 6.463952003686119
+ },
+ {
+  "source": "uav_lidar",
+  "bridge": "Wonli",
+  "sensor": "DJI Zenmuse L1 (UAV LiDAR)",
+  "case": "raw scan (ground + vegetation)",
+  "method": "combined (best of last 2)",
+  "success": 4,
+  "trials": 4,
+  "median_err_m": 0.008809601025733253
+ }
+]
