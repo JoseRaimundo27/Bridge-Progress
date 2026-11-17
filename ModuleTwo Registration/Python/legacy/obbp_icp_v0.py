@@ -197,8 +197,8 @@ def obbp_icp_corrigido(scan_raw, bim_raw, voxel_size=0.1, square_tol=0.15, icp_d
 # =========================================================
 if __name__ == "__main__":
     # 1. Defina os caminhos dos seus arquivos .ply
-    scan_path = "../AsBuilt/S07/Segmented S07.ply"
-    bim_path = "../AsPlanned/S07/asplanned_pointcloud_s07.ply"
+    scan_path = "../../AsBuilt/S07/Segmented S07.ply"
+    bim_path = "../../AsPlanned/S07/s07_without_piles.ply"
     
     print("Carregando nuvens de pontos...")
     scan_raw = o3d.io.read_point_cloud(scan_path)

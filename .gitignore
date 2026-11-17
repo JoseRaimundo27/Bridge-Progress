@@ -4,9 +4,12 @@ env/
 __pycache__/
 .pytest_cache/
 *.py[cod]
+*.ifc
+*.ply
 
 # ModuleOne BIMtoPC
 ModuleOne BIMtoPC/ifc2x3/
+ModuleOne BIMtoPC/Models/
 ModuleOne BIMtoPC/Modelos/
 ModuleOne BIMtoPC/Python/resultado*/
 

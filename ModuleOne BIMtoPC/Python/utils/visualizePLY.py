@@ -22,5 +22,5 @@ def visualizar_ply(caminho_arquivo):
 
 if __name__ == "__main__":
     # Substitua pelo caminho do seu arquivo .ply
-    caminho_do_ply = "../../Results/resultado_nuvem_global/s07/modelo_as_planned_global.ply"
+    caminho_do_ply = "../../Results/resultado_nuvem_global/s07_without_piles/modelo_as_planned_global.ply"
     visualizar_ply(caminho_do_ply)

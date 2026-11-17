@@ -3,9 +3,9 @@ from pathlib import Path
 import open3d as o3d
 
 PASTA_SCRIPT = Path(__file__).resolve().parent
-PASTA_MALHAS = PASTA_SCRIPT.parent / "Results"/ "resultados_geometricos" / "d19"      # saída de extrair_geometria.py
-PASTA_NUVENS = PASTA_SCRIPT.parent / "Results"/  "resultados_nuvens_elementos" / "d19"    # uma nuvem .ply por elemento
-PASTA_GLOBAL =  PASTA_SCRIPT.parent / "Results"/ "resultado_nuvem_global" / "d19"
+PASTA_MALHAS = PASTA_SCRIPT.parent / "Results"/ "resultados_geometricos" / "s07"      # saída de extrair_geometria.py
+PASTA_NUVENS = PASTA_SCRIPT.parent / "Results"/  "resultados_nuvens_elementos" / "s07_without_piles"    # uma nuvem .ply por elemento
+PASTA_GLOBAL =  PASTA_SCRIPT.parent / "Results"/ "resultado_nuvem_global" / "s07_without_piles"
 
 
 def gerar_nuvem_as_planned(pasta_malhas=PASTA_MALHAS, densidade_pontos_m2=50, pontos_minimos=100):
